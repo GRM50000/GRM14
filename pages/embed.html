@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="GRM50000 Color Picker | Enter a color name or hex and see it displayed">
+    <meta property="og:description" content="GRM50000 Color Picker | Enter a color name or hex and see it displayed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template | GaryReidMusic.com</title>
+    <!--    favicon-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../css/stylerando.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="../index.html">
+            <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+        <h1 class="GRM50000">Template</h1>
+        <script>
+            function myFunction() {
+                let person = prompt("Please enter your name", "Harry Potter");
+                if (person != null) {
+                    document.getElementById("demo").innerHTML =
+                        "I am Grateful for you, " + person + "!";
+                }
+            }
+
+        </script>
+        <h2 id="demo">Analog Music and Digital Media<button id="name" onclick="myFunction()">What's Your Name?</button></h2>
+
+        <p>I'm looking to start a new journey as part of a digital team. </p>
+        <p style="color: black">I love doing this stuff</p>
+    </header>
+    <!-- exemplary topnav 512 
+        between header and main -->
+
+    <div class="topnav">
+        <a href="../index.html" class="active">Home - Menu</a>
+        <div id="myLinks">
+            <a href="all-music.html">Music</a>
+            <a href="adobe-suite.html">Adobe</a>
+            <a href="all-web.html">Web Coding </a>
+        </div>
+        <!-- nav script -->
+        <script>
+            function myFunction1() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+        </script>
+        <!-- nav bars -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- ^exemplary topnav 512 
+        between header and main -->
+    <main id="main">
+        <article class="container">
+            <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
+
+            <h2 class="article_h2">Videos</h2>
+            <p>Videos I made using Adobe AfterEffects and Premiere Pro</p>
+            <br>
+            <!-- space-->
+            <p class="buttonFake" id="dmtAd">Daily Music Thing Ad</p>
+            <p class="buttonFake" id="animatedLogo">Animated Logo</p>
+            <p class="buttonFake" id="Ad2">Ad2</p>
+            <p class="buttonFake" id="Ad3">Ad3</p>
+            <br>
+        </article>
+
+        <article class="container" id="randoFeature">
+            <img class="article_img" id="article_2_img" src="../images/gradientColorWheel.png" alt="ColorWheel by 8 leaf-clover, https://commons.wikimedia.org/w/index.php?curid=113344793" width="100" height="100" style="float: right">
+
+            <section id="Display">
+                <h2 class="article_h2">Display</h2>
+
+
+                <!--embed YT-->
+                <figure>
+                    <div>
+                        <span><iframe src="https://www.youtube.com/embed/DlBNsSPTjFA?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;wmode=transparent" allowfullscreen="true" style="border:5px solid #A20; border-radius: 10px; width:100%;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe></span>
+                    </div>
+                    <figcaption><span class="uppercase">DailyMusicThing Ad, Created with Adobe After Effects</span></figcaption>
+                </figure>
+            </section>
+            <!--            embed-->
+
+        </article>
+
+
+        <!-- h2{Article Heading}+p>Lorem15
+            <h2 class="article_h2">Color Picker</h2>
+            <p>Enter a Hex Code below.</p>
+            <p>Enter a Hex Code above.</p>
+                 </article>-->
+
+    </main>
+    <div id="space"></div>
+    <footer>
+        <a href="https://github.com/GRM50000" target="_blank">
+            <i class="fa-brands fa-github-square footerx">GitHub</i></a>
+
+        <a href="https://www.instagram.com/garyreidmusic" target="_blank">
+            <i class="fa-brands fa-instagram footerx">Instagram</i></a>
+
+        <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
+        <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
+
+        <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
+            <i class="fa-brands fa-spotify footerx">Spotify</i></a>
+
+        <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
+    </footer>
+    <!--    <script src="../scripts/js1.js"></script>-->
+</body>
+
+</html>
+
+<!--(((AUDIO CLIP ))) 
+            
+<audio controls autoplay id="playThis">
+<source src="myNameIsForrest.mp3" type="audio/mpeg">
+</audio>
+
+(((AUDIO CLIP )))-->
+
+<!--This was a distraction - change anything-->

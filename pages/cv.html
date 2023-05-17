@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Not BootStrap -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Gary Reid</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--    end font awesome-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="../index.html">
+            <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+        <a href="index.html" id="homeLink">
+            <h1>Gary Reid Music</h1>
+        </a>
+        <p>Warehouse Logistics, Adobe Suite, and Web Development</p>
+        <p>Seeking to joining a digital design team focused on quality. </p>
+
+    </header>
+    <!-- exemplary topnav 512 
+        between header and main -->
+
+    <div class="topnav">
+        <a href="../index.html" class="active">Home - Menu</a>
+        <div id="myLinks">
+            <a href="all-music.html">Music</a>
+            <a href="adobe-suite.html">Adobe</a>
+            <a href="all-web.html">Web Coding </a>
+        </div>
+        <!-- nav script -->
+        <script>
+            function myFunction1() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+        </script>
+        <!-- nav bars -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- ^exemplary topnav 512 
+        between header and main -->
+
+    <main id="oneTwoMed">
+
+
+
+        <article class="container">
+            <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Keyboard for Coding" width="100" height="100" style="float:right">
+            <!-- h2{Article Heading}+p>Lorem15    -->
+
+            <h2>Seeking A Team</h2>
+
+            <p>For over two years I've been studying the Adobe Suite and Front-End Web Development with HTML, CSS, and JavaScript.</p>
+            <section class="skills">Course Completions in:
+                <p>Content Management
+                    <br>Design Principles
+                    <br>Digital Design I &amp; II
+                    <br>Motion and Video Production
+                    <br>Motion Graphics
+                    <br>Page Layout Design
+                    <br>Portfolio Design
+                    <br>UI Design
+                    <br>Vector Design
+                    <br>Video Production
+                    <br>Visual Design
+                    <br>Web Design
+                    <br>Web Programming Beginner
+                    <br>Web Design Workflow
+                </p>
+            </section>
+        </article>
+        <article class="container">
+            <img class="article_img" id="article_2_img" src="../images/coding.png" alt="GRM50000 Web Coding" width="100" height="100" style="float: right">
+            <!-- h2{Article Heading}+p>Lorem15    -->
+
+            <h2 class="article_h2">My Resume / CV</h2>
+            <div class="myCV" id="myCV">
+                <object data="/GaryReidCV.pdf" type="application/pdf" width="500">
+                    <img src="../images/grCVpng.png" alt="My CV" id="myCVimg">
+                </object>
+                <div class="buttonFake" id="resumeButton"><a href="GaryReidCV.pdf">View in a Browser instead?</a></div>
+            </div>
+            <br>
+        </article>
+    </main>
+    <div id="space"></div>
+    <footer>
+        <a href="https://github.com/GRM50000" target="_blank">
+            <i class="fa-brands fa-github-square footerx">GitHub</i></a>
+
+        <a href="https://www.instagram.com/garyreidmusic" target="_blank">
+            <i class="fa-brands fa-instagram footerx">Instagram</i></a>
+
+        <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
+        <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
+
+        <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
+            <i class="fa-brands fa-spotify footerx">Spotify</i></a>
+
+        <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
+    </footer>
+    <script src="../scripts/js1.js"></script>
+
+</html>

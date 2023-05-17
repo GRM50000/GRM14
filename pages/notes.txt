@@ -1,0 +1,24 @@
+Portfolio Website: 
+
+- Identify Your Users 
+- Outline Your Goals 
+- Current Assets 
+    * what's perfect?
+    * what needs more work / needs to be fixed
+    * enhancements to existing work
+- 3 Strengths / 3 Weaknesses 
+- Elevator Pitch
+    I'm designing a resource for guitarists and musicians with rhythms, lessons, backing tracks
+    
+#2
+- Sitemap 
+- Wireframes 
+- Gather Assets & Optimize 
+- Comps (design)
+
+#3
+- Development (coding)
+
+#4 
+- Extensive Testing 
+- Get it Hosted

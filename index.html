@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Not BootStrap -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gary Reid Music and Media: Web Design and Rhythm Guitar">
+    <meta property="og:description" content="Gary Reid Music and Media: Web Design and Rhythm Guitar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary Reid Music | Home of Music and Web Design </title>
+    <meta name="description" content="Place the meta description text here.">
+    <link rel="icon" type="image/x-icon" href="images/favicon-grm.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <header id="header">
+
+        <!-- name script -->
+        <script>
+            function myFunction() {
+                let person = prompt("Please enter your name", "Harry Potter?");
+                if (person != null) {
+                    document.getElementById("demo").innerHTML =
+                        "I am Grateful for you, " + person + "!";
+                }
+            }
+
+        </script>
+
+        <a href="index.html">
+            <img id="logo" src="images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+
+        <div id="h1andP">
+            <a href="index.html">
+                <h1>Gary Reid Music</h1>
+            </a>
+            <p id="headerText">I've played <a href="pages/guitar.html" style="color:#a20" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="pages/digital-design.html" style="color:#a20">Graphic Design</a> on a Macintosh 512k... </p>
+        </div>
+
+        <h2 id="demo">Music and Media
+            <button id="name" onclick="myFunction()">What's Your Name?</button>
+        </h2>
+
+
+
+    </header>
+
+    <!-- this nav is good - top level only -->
+
+    <div class="topnav">
+        <a href="#home" class="active">Home - Menu</a>
+        <div id="myLinks">
+            <a href="pages/all-music.html">Music</a>
+            <a href="pages/adobe-suite.html">Adobe</a>
+            <a href="pages/all-web.html">Web Coding</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+
+    <!-- this nav is good - top level only -->
+
+    <main id="main">
+        <article class="container">
+            <a href="pages/cv.html"><img class="article_img" width="100" height="100" src="images/coding.png" alt="Web Design" style="float: left"></a>
+            <h2 class="article_h2">CV / Resume</h2>
+            <p class="bigCaps">Two-year Certificate in Digital Design (Adobe Suite.)<br> Find me on <a href="https://github.com/GRM50000" target="_blank">GitHub</a>,
+                <a href="https://codepen.io/GRM50000/" target="_blank">CodePen</a>,
+                <a href="https://cssbattle.dev/player/grm50000" target="_blank">CSS Battle Dev</a>, and <a href="https://stackblitz.com/@GRM50000" target="_blank">StackBlitz</a>.
+            </p>
+            <p id="sep">
+                <a href="pages/cv.html" class="buttonFake" role="button">See My CV Here</a>
+            </p>
+        </article>
+
+
+        <article class="container">
+            <a href="pages/adobe-suite.html">
+                <img class="article_img" id="adobeLogo1" width="100" height="100" src="images/adobe_logo.png" alt="Adobe Suite Certified"></a>
+            <h2>Adobe Suite</h2>
+            <p class="bigCaps">From 2021-23 I was Certified in Digital Design by San Diego City College CE, encompassing the full Adobe Creative Suite.</p><br>
+            <p>
+                <a href="pages/digital-design.html" class="buttonFake" role="button">See my Digital Works</a>
+            </p>
+        </article>
+
+
+        <article class="container">
+            <a href="pages/rando.html">
+                <img class="article_img" width="100" height="100" src="images/eyetrip.jpeg" alt="Color Picker" style="float: left"></a>
+            <h2>Color Picker</h2>
+            <p class="bigCaps">A fun project I coded where you can type and display any Hex Code or Named Color.</p><br>
+            <p>
+                <a href="pages/rando.html" class="buttonFake">Try It Here!</a>
+            </p>
+        </article>
+
+        <article class="container">
+            <a href="pages/insta.html">
+                <img class="article_img" id="igLogo" width="100" height="100" src="images/igLogo.webp" alt="IG without IG" style="float: right"></a>
+            <h2>Insta Live</h2>
+            <p class="bigCaps">If you don't have Instagram, but still want to share the journey...</p><br>
+            <p>
+                <a href="pages/insta.html" class="buttonFake" role="button">Photos and Videos</a>
+            </p>
+        </article>
+        <!--wait-->
+
+        <article class="container"><a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank">
+                <img class="article_img" id="gretschIndex" src="images/GretschSquare400.jpg" alt="Gary Reid Backing Tracks" width="100" height="100"></a>
+            <h2>Backing Tracks</h2>
+            <p class="bigCaps">On YouTube I've been posting Rhythm Guitar Tracks for people to play along with since 2017... </p><br>
+            <p><a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank" class="buttonFake" role="button">
+                    Check them out Here!</a></p>
+        </article>
+
+
+
+
+        <!--wait-->
+        <article class="container">
+
+            <a href="https://garyreidmusic.bandcamp.com/album/healing-fractures-gary-reid-music" target="_blank">
+                <img class="article_img" src="images/getThis.jpg" alt="My Music Audio" style="float: right" width="100" height="100">
+            </a>
+            <h2 class="article_h2">My Songs</h2>
+            <p class="bigCaps">I've written hundreds of <em>Original</em> Songs and I've published about <strong><em>41</em></strong> of them...</p><br>
+            <p><a href="https://garyreidmusic.bandcamp.com/album/healing-fractures-gary-reid-music" class="buttonFake" target="_blank">Get My Songs Here!</a></p>
+        </article>
+        <!--wait-->
+    </main>
+    <div id="space"></div>
+    <footer>
+        <a href="https://github.com/GRM50000" target="_blank">
+            <i class="fa-brands fa-github-square footerx">GitHub</i></a>
+
+        <a href="https://www.instagram.com/garyreidmusic" target="_blank">
+            <i class="fa-brands fa-instagram footerx">Instagram</i></a>
+
+        <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
+        <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
+
+        <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
+            <i class="fa-brands fa-spotify footerx">Spotify</i></a>
+
+        <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
+    </footer>
+</body>
+
+</html>

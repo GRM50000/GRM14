@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Not BootStrap -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Adobe Work | GRM50000 | Gary Reid Music </title>
+    <!--    favicon-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
+    <!-- REMOVED THE RESET
+      <link rel="stylesheet" href="css/reset.css"> -->
+
+    <!--    fontawesomeicons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--    my css-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="../index.html">
+            <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+        <h1>Gary Reid Music</h1>
+        <script>
+            function myFunction() {
+                let person = prompt("Please enter your name", "Harry Potter");
+                if (person != null) {
+                    document.getElementById("demo").innerHTML =
+                        "I am Grateful for you, " + person + "!";
+                }
+            }
+
+        </script>
+
+        <h2 id="demo">Spreading Gratitude Through Music <button id="name" onclick="myFunction()">What's Your Name?</button></h2>
+
+        <p>For over 12 years, my guitar and I have entertained a million people around the world.</p>
+        <p>Now I'm ready to start a new journey as part of a digital team. </p>
+    </header>
+    <!-- exemplary topnav 512 
+        between header and main -->
+
+    <div class="topnav">
+        <a href="../index.html" class="active">Home - Menu</a>
+        <div id="myLinks">
+            <a href="all-music.html">Music</a>
+            <a href="adobe-suite.html">Adobe</a>
+            <a href="all-web.html">Web Coding </a>
+        </div>
+        <!-- nav script -->
+        <script>
+            function myFunction1() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+        </script>
+        <!-- nav bars -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- ^exemplary topnav 512 
+        between header and main -->
+    <main id="main">
+        <article class="container">
+            <img class="article_img" id="article_1_img" src="../images/adobe_logo.png" alt="Adobe Suite Logo" width="100" height="100" style="float: right">
+            <!-- h2{Article Heading}+p>Lorem15    -->
+
+            <h2 class="article_h2">From AE to XD</h2>
+            <p>Two years Certified in Digital Design using Adobe Suite </p>
+            <!-- space-->
+            <!--            <p>I have designed, created, and completed many projects, displayed in these pages.</p>-->
+        </article>
+
+        <article class="container">
+            <img class="article_img" src="../images/eyetrip.jpeg" alt="Color Picker" width="100" height="100" style="float: right">
+
+            <section id="colorPicker">
+                <h2 class="article_h2">My Adobe&copy; Portfolio</h2>
+                <p>In 2022 I finally designed the logo I've always envisioned</p>
+                <!--                <p>My proudest moment in my 30 years of design happened in 2022 when I designed the SVG logo I have dreamed of.</p>-->
+                <div>
+                    <img id="logoDisplay" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo" class="displayImg">
+                    <!-- make ^this^ a mouseover with the color globe -->
+                </div>
+
+
+
+                <!--
+                Input three values for background gradient colors:
+                <input type="text" class="gradientNames" id="grad1" placeholder"word or #xxxxxx" name="grad1">
+                <input type="text" class="gradientNames" id="grad2" placeholder"word or #xxxxxx" name="grad2">
+                <input type="text" class="gradientNames" id="grad3" placeholder"word or #xxxxxx" name="grad3">
+-->
+            </section>
+        </article>
+
+        <article class="container" id="article3">
+            <img class="article_img" id="article_1_img" src="../images/5.png" alt="Adobe Suite Logo" width="100" height="100" style="float: right">
+            <!-- h2{Article Heading}+p>Lorem15    -->
+
+            <h2 class="article_h2">What's here?</h2>
+
+            <object data="../images/Reid_661_PlayingCard.pdf" type="application/pdf" class="displayFull">
+                <p>Unable to display PDF file. <a href="../assets/Reid_661_PlayingCard.pdf">Download</a> instead.</p>
+
+            </object>
+            <!-- space-->
+            <p>I have designed, created, and completed many projects, displayed in these pages.</p>
+        </article>
+
+
+
+    </main>
+    <div id="space"></div>
+    <footer>
+        <a href="https://github.com/GRM50000" target="_blank">
+            <i class="fa-brands fa-github-square footerx">GitHub</i></a>
+
+        <a href="https://www.instagram.com/garyreidmusic" target="_blank">
+            <i class="fa-brands fa-instagram footerx">Instagram</i></a>
+
+        <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
+        <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
+
+        <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
+            <i class="fa-brands fa-spotify footerx">Spotify</i></a>
+
+        <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
+    </footer>
+    <!--    <script src="../scripts/js1.js"></script>-->
+</body>
+
+</html>

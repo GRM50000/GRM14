@@ -1,0 +1,33 @@
+.youtube-embed {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#grmtop {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: black;
+    color: white;
+    border: 3px white solid;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+#img1 img {
+    border: 1px solid white;
+    text-align: center;
+    position: relative;
+    left: 20px;
+}
+
+
+#main1 {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+

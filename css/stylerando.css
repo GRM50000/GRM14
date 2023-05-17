@@ -1,0 +1,500 @@
+:root {
+    /*typography*/
+    --primary-font: 'Aldrich', Verdana, sans-serif;
+    --secondary-font: 'PT Mono', monospace;
+    /*spacing*/
+    --border-radius: 10px;
+    --primary-padding: 5px;
+    --primary-margin: 5px;
+
+    /*colors*/
+    --bg-color: orange;
+    --secondary-color: #A20;
+    --bright-color: yellow;
+    /* borders and shadows*/
+    --secondary-border: 3mm double black;
+    --text-shadow-light: 1px 1px 1px #999;
+    --shadow-dark: 1px 1px 1px #555;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--bg-color);
+    margin: auto;
+
+}
+
+header {
+    background-image: linear-gradient(to top, var(--bg-color), var(--bright-color), var(--secondary-color));
+    border: 5mm double var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: var(--primary-padding);
+    padding-bottom: 0;
+    position: relative;
+    margin: var(--primary-margin);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--primary-margin);
+    animation: mymove 8s infinite;
+    /*    animation-delay: 3s;*/
+}
+
+@keyframes mymove {
+    50% {
+        border: 5mm double var(--bright-color);
+    }
+}
+
+#h1andP {
+    display: flex;
+    float: left;
+}
+
+header img {
+    border: 3px white solid;
+    border-radius: var(--border-radius);
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    margin: var(--primary-margin);
+    margin-left: 20px;
+    box-shadow: var(--shadow-dark);
+}
+
+header p {
+    margin: 5px;
+}
+
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: var(--bright-color);
+}
+
+header a:active {
+    color: var(--secondary-color);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: var(--text-shadow-dark);
+    font-size: 3em;
+}
+
+main {
+    border: 5px var(--bright-color) solid;
+    border-radius: var(--border-radius);
+    margin: var(--primary-margin);
+    padding: var(--primary-padding);
+}
+
+img {
+    border: var(--bg-color) solid 5px;
+}
+
+#cvPDF {
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+}
+
+.pWhite {
+    color: white;
+}
+
+
+
+#space {
+    height: 2rem;
+}
+
+#YT {
+    width: 100%;
+    min-height: 400px;
+    max-width: 800px;
+    margin-top: 10px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+}
+
+#thePDF {
+    width: 100%;
+}
+
+#logo {
+    --sameNum: 6em;
+    height: var(--sameNum);
+    width: var(--sameNum);
+    float: right;
+    background-image: radial-gradient(yellow, orange, #a20);
+}
+
+#name {
+    cursor: pointer;
+    border: 1px white solid;
+    color: white;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    margin: auto;
+    background-color: #222;
+    box-shadow: var(--shadow-dark);
+}
+
+
+#sep {
+    padding: 10px;
+}
+
+.nav-list {
+    display: flex;
+    background-color: var(--bright-color);
+    list-style: none;
+    border-radius: var(--border-radius);
+    justify-content: space-evenly;
+}
+
+.active {
+    background-color: var(--bg-color);
+    color: var(--bright-color);
+    position: relative;
+    left: 30px;
+}
+
+.container {
+    position: relative;
+    border: 2px black solid;
+    border-radius: var(--border-radius);
+    margin: 2px;
+    padding: var(--primary-padding);
+    /*    padding-bottom: 0;*/
+    background-color: #aaa;
+}
+
+/*WHY when I change the padding on this, it only fucks up article_img_1*/
+
+
+#myCVimg {
+    width: 95%;
+    height: 95%;
+    margin-bottom: 10px;
+    margin: var(--primary-margin);
+}
+
+header h2 {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    height: auto;
+    margin: 3px;
+    padding-left: 10px;
+    color: white;
+    text-shadow: var(--text-shadow-dark);
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    border-radius: var(--border-radius);
+    height: auto;
+    margin: 0px;
+    margin-right: 10px;
+    padding: 5px;
+    box-shadow: var(--box-shadow-dark);
+}
+
+.container h2 {
+    display: flex;
+    color: var(--secondary-color);
+    text-shadow: var(--text-shadow-light);
+    background-color: #EBD4A2;
+}
+
+.article_img {
+    margin: var(--primary-margin);
+    border-radius: var(--border-radius);
+    height: 4em;
+    width: 4em;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.displayImg {
+    width: 85%;
+    margin-bottom: var(--primary-margin);
+
+}
+
+blockquote {
+    margin: auto;
+}
+
+#igpic {
+    margin: auto;
+}
+
+/*
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: #FFFF00;
+    color: blue;
+    border-top-left-radius: 20px;
+    padding: 5px;
+    border: 3px white solid;
+    width: 98%;
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: var(--primary-padding);
+}
+
+.footerx {
+    font-size: .7em;
+    border: 5px solid white;
+    border-radius: var(--border-radius);
+    padding: 3px;
+    margin-bottom: 10px;
+}*/
+
+a:link {
+    text-decoration: none;
+    color: blue;
+    text-shadow: orange 1px 1px 1px;
+    font-weight: 700;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+footer {
+    display: grid;
+    position: fixed;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    bottom: 0;
+    background-color: var(--bright-color);
+    border-top-left-radius: 20px;
+    border: 3px white solid;
+    border-bottom: none;
+    border-right: none;
+    padding: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+footer a {
+    font-size: 2vw;
+    border: 3px solid #00008B;
+    margin: auto;
+    padding: 4px;
+    border-radius: var(--border-radius);
+    transform: rotate(-3deg);
+    margin-bottom: 5px;
+    margin-top: 1px;
+}
+
+footer a:link {
+    text-decoration: underline;
+    color: white;
+}
+
+footer a:visited {
+    color: #00008B;
+}
+
+footer a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+footer i {
+    color: #00008B;
+}
+
+footer i:hover {
+    color: white;
+}
+
+#colorInputText {
+    height: 1.5em;
+    width: 8em;
+    border: 1px solid var(--bg-color);
+    border-radius: var(--border-radius);
+    font-size: 1.1em;
+    padding-left: .5em;
+    /*    VVV*/
+    box-shadow: 2px 2px 2px black;
+    max-width: 95%;
+    margin-bottom: var(--primary-margin);
+}
+
+#colorButton {
+    height: 1.5em;
+    width: 6em;
+    border: 1px solid var(--bg-color);
+    border-radius: var(--border-radius);
+    font-size: 1.1em;
+    padding-left: .5em;
+    /*    VVV*/
+    box-shadow: 2px 2px 2px black;
+    max-width: 95%;
+}
+
+/*Kick-Specific Code:*/
+#leftColumn {
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: var(--primary-padding);
+    margin: 5px;
+}
+
+#logoDisplay {
+    background-image: radial-gradient(var(--bright-color), aqua, black);
+    border-radius: var(--border-radius);
+}
+
+.buttonFake {
+    position: absolute;
+    left: var(--primary-margin);
+    bottom: var(--primary-margin);
+    margin: var(--primary-margin);
+    display: inline-flex;
+    border: 1px solid var(--bright-color);
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 95%;
+}
+
+.buttonFakeChoice {
+    left: var(--primary-margin);
+    bottom: var(--primary-margin);
+    margin: var(--primary-margin);
+    /*    display: inline-flex;*/
+    border: 1px solid red;
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    padding: 5px;
+    border-radius: 5px;
+    /*    max-width: 95%;
+    */
+}
+
+/*Nav Menu Try*/
+
+.topnav {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: orange;
+    border: 1px solid #a20;
+    position: relative;
+    margin: var(--primary-margin);
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: var(--bright-color);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    /*    margin: 5px 0;*/
+    display: block;
+}
+
+.topnav a.icon {
+    background-color: #A20;
+    color: var(--bright-color);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: var(--bright-color);
+    color: #A20;
+}
+
+/*Nav Menu Try*/
+
+.videoButton {
+    font-size: .1em;
+    padding: .4em;
+}
+
+/*_RESPONSIVITY_*/
+/*_RESPONSIVITY_*/
+/*_RESPONSIVITY_*/
+
+@media only screen and (min-width: 550px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header img {
+        border: 3px solid white;
+        width: 130px;
+        height: 130px;
+        border-radius: var(--border-radius);
+    }
+
+    header h2 {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    #main {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 1fr 1fr;
+        margin: var(--primary-margin);
+
+    }
+
+    article {
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #main {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 1fr 3fr;
+        position: static;
+        left: 30px;
+    }
+
+    article {
+        /* KEY THING -display-grid- KEY THING*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        order: 0;
+    }
+
+    #myCVimg {
+        margin-top: 10px;
+
+    }
+
+    .container img {
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+}
