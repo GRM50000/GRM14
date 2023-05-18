@@ -505,15 +505,12 @@ a:visited {
             order: 0;
         }
 
-
-
         #gretschIndex {
-            float: right;
+            float: left;
         }
     }
 
     @media only screen and (min-width:1000px) {
-
         body {
             background: #a20;
         }
