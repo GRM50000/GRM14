@@ -11,7 +11,6 @@ document.getElementById('change-video-110').onclick = function () {
     document.getElementById('ytVideo').src = 'https://www.youtube.com/embed/TfIapBzeAos';
 };
 
-
 document.getElementById('change-video-111').onclick = function () {
     document.getElementById('ytVideo').src = 'https://www.youtube.com/embed/R9UfvtcmZwA';
 };
@@ -20,14 +19,17 @@ document.getElementById("change-video-112").onclick = function () {
     document.getElementById('ytVideo').src = "https://www.youtube.com/embed/o22v_4ARQE0";
 };
 
-
 document.getElementById("change-video-113").onclick = function () {
-    document.getElementById('ytVideo').src = "https://www.youtube.com/embed/o22v_4ARQE0";
-};
-document.getElementById("change-video-114").onclick = function () {
-    document.getElementById('ytVideo').src = "https://www.youtube.com/embed/o22v_4ARQE0";
+    document.getElementById('ytVideo').src = "https://www.youtube.com/embed/-yccGbBhiYI";
 };
 
+document.getElementById("change-video-114").onclick = function () {
+    document.getElementById('ytVideo').src = "https://www.youtube.com/embed/W75BJAKVm8E";
+};
+
+document.getElementById("change-video-115").onclick = function () {
+    document.getElementById('ytVideo').src = "https://www.youtube.com/embed/";
+};
 //
 //{document.getElementById("change-video-11$").onclick = function() {document.getElementById('ytideo').src = "https://www.youtube.com/embed/11$";}}*9
 //
