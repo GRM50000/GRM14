@@ -18,15 +18,32 @@
 <body>
 
     <header id="header">
-        <a href="../index.html">
-            <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
-        <a href="index.html" id="homeLink">
-            <h1>Gary Reid Music</h1>
-        </a>
-        <p>Warehouse Logistics, Adobe Suite, and Web Development</p>
-        <p>Seeking to joining a digital design team focused on quality. </p>
 
+        <!-- name script -->
+        <script>
+            function myFunction() {
+                let person = prompt("Please enter your name", "Harry Potter?");
+                if (person != null) {
+                    document.getElementById("demo").innerHTML =
+                        "I am Grateful for you, " + person + "!";
+                }
+            }
+
+        </script>
+        <div id="fixBlock">
+            <a href="../index.html">
+                <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+
+            <a href="../index.html">
+                <h1>Gary Reid Music</h1>
+            </a>
+            <p id="headerText">I've played <a href="guitar.html" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="digital-design.html">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
+            <h2 id="demo">Music and Media
+                <button id="name" onclick="myFunction()">What's Your Name?</button>
+            </h2>
+        </div>
     </header>
+
     <!-- exemplary topnav 512 
         between header and main -->
 
@@ -59,9 +76,19 @@
         between header and main -->
 
     <main id="oneTwoMed">
+        <article class="container">
+            <img class="article_img" id="article_2_img" src="../images/coding.png" alt="GRM50000 Web Coding" width="100" height="100" style="float: right">
+            <!-- h2{Article Heading}+p>Lorem15    -->
 
-
-
+            <h2 class="article_h2">My Resume / CV</h2>
+            <div class="myCV" id="myCV">
+                <object data="../GaryReidCV.pdf" type="application/pdf" width="500">
+                    <img src="../images/grCVpng.png" alt="My CV" id="myCVimg">
+                </object>
+                <div class="buttonFake" id="resumeButton"><a href="GaryReidCV.pdf" target="_blank">View in a Browser instead?</a></div>
+            </div>
+            <br>
+        </article>
         <article class="container">
             <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Keyboard for Coding" width="100" height="100" style="float:right">
             <!-- h2{Article Heading}+p>Lorem15    -->
@@ -87,19 +114,7 @@
                 </p>
             </section>
         </article>
-        <article class="container">
-            <img class="article_img" id="article_2_img" src="../images/coding.png" alt="GRM50000 Web Coding" width="100" height="100" style="float: right">
-            <!-- h2{Article Heading}+p>Lorem15    -->
 
-            <h2 class="article_h2">My Resume / CV</h2>
-            <div class="myCV" id="myCV">
-                <object data="/GaryReidCV.pdf" type="application/pdf" width="500">
-                    <img src="../images/grCVpng.png" alt="My CV" id="myCVimg">
-                </object>
-                <div class="buttonFake" id="resumeButton"><a href="GaryReidCV.pdf">View in a Browser instead?</a></div>
-            </div>
-            <br>
-        </article>
     </main>
     <div id="space"></div>
     <footer>
@@ -117,6 +132,7 @@
 
         <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
     </footer>
-    <script src="../scripts/js1.js"></script>
+    <!--    <script src="../scripts/js1.js"></script>-->
+</body>
 
 </html>

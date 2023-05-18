@@ -7,7 +7,7 @@
     <meta name="description" content="Adobe Suite Portfolio | Gary Reid | GRM50000">
     <meta property="og:description" content="Adobe Suite Portfolio | Gary Reid | GRM50000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Picker | GRM50000 |Gary Reid</title>
+    <title>Adobe Portfolio | GRM50000 |Gary Reid</title>
     <!--    favicon-->
     <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
 
@@ -20,12 +20,10 @@
 <body>
 
     <header id="header">
-        <a href="../index.html">
-            <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
-        <h1 class="GRM50000">GRM50000 Design</h1>
+        <!-- name script -->
         <script>
             function myFunction() {
-                let person = prompt("Please enter your name", "Harry Potter");
+                let person = prompt("Please enter your name", "Harry Potter?");
                 if (person != null) {
                     document.getElementById("demo").innerHTML =
                         "I am Grateful for you, " + person + "!";
@@ -33,10 +31,18 @@
             }
 
         </script>
-        <h2 id="demo">Showing Gratitude Via Digital Media<button id="name" onclick="myFunction()">What's Your Name?</button></h2>
+        <div id="fixBlock">
+            <a href="../index.html">
+                <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
 
-        <p>I'm looking to start a new journey as part of a digital team. </p>
-        <p style="color: black">I love doing this stuff.</p>
+            <a href="../index.html">
+                <h1>Gary Reid Music</h1>
+            </a>
+            <p id="headerText">I've played <a href="guitar.html" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="digital-design.html">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
+            <h2 id="demo">Music and Media
+                <button id="name" onclick="myFunction()">What's Your Name?</button>
+            </h2>
+        </div>
     </header>
     <!-- exemplary topnav 512 
         between header and main -->
@@ -85,9 +91,9 @@
                 <h2 class="article_h2">A Baseball Card</h2>
                 <!--            insert Baseball Card PDF-->
                 <div class="myCV" id="baseballCardDiv">
-                    <object data="../assets.pdf" type="application/pdf" width="500">
-                        <img src="../images/playingCard_PNG.png" alt="Queen of Diamonds Rabbit Playing Card" id="baseballCard">
-                    </object>
+
+                    <img src="../images/playingCard_PNG.png" alt="Queen of Diamonds Rabbit Playing Card" id="baseballCard">
+
                     <div class="buttonFake"><a href="../assets/Reid_661_PlayingCard.pdf">View in a Browser instead?</a></div>
                 </div>
             </section>

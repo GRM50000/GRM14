@@ -12,17 +12,15 @@
     <!-- I might not need it, but here's Font Awesome Solid + Brands -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!--end of font awesome-->
-    <link rel="stylesheet" href="../css/stylerando.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header id="header">
-        <a href="../index.html">
-            <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
-        <h1>Gary Reid Music</h1>
+        <!-- name script -->
         <script>
             function myFunction() {
-                let person = prompt("Please enter your name", "Harry Potter");
+                let person = prompt("Please enter your name", "Harry Potter?");
                 if (person != null) {
                     document.getElementById("demo").innerHTML =
                         "I am Grateful for you, " + person + "!";
@@ -30,11 +28,18 @@
             }
 
         </script>
-        <h2 id="demo">Spreading Gratitude Through Music <button id="name" onclick="myFunction()">What's Your Name?</button></h2>
+        <div id="fixBlock">
+            <a href="../index.html">
+                <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
 
-        <p>For over 12 years, my guitar and I have entertained a million people around the world.</p>
-        <p>Now I'm ready to start a new journey as part of a digital team. </p>
-        <p style="color: black">I'm a word-, number-, and guitar-nerd, as you'll see...</p>
+            <a href="../index.html">
+                <h1>Gary Reid Music</h1>
+            </a>
+            <p id="headerText">I've played <a href="guitar.html" target="_blank" style="color:white">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="digital-design.html" style="color:#a20">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
+            <h2 id="demo">Music and Media
+                <button id="name" onclick="myFunction()">What's Your Name?</button>
+            </h2>
+        </div>
     </header>
     <!-- exemplary topnav 512 
         between header and main -->
@@ -67,10 +72,10 @@
     <!-- ^exemplary topnav 512 
         between header and main -->
 
-    <main id="main">
+    <main id="oneTwoMed">
 
         <article class="container">
-            <img class="article_img" src="../images/igLogo.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
+            <img class="article_img" src="../images/igLogo.jpg" alt="@GaryReidMusic on Instagram" width="100" height="100" style="float: right">
             <h2>My InstaG</h2>
             <p>Every week, I post a few photos summarizing the week, and I post a video which is usually a Rhythm Guitar track</p><br>
             <!-- hold on -->
