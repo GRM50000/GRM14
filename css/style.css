@@ -295,7 +295,7 @@ h2 {
     width: 100%;
     object-fit: contain;
     margin: auto;
-    padding-bottom: 3em;
+    margin-bottom: 3.5em;
     border-radius: var(--border-radius);
 
 }
@@ -508,20 +508,20 @@ a:visited {
         #gretschIndex {
             float: left;
         }
+
+        #baseballCard {
+            margin-top: 10px;
+            border-radius: var(--border-radius);
+        }
     }
 
     @media only screen and (min-width:1000px) {
         body {
             background: #a20;
+            max-width: 1000px;
         }
 
         .topnav {
             border: yellow 1px solid;
-        }
-    }
-
-    @media only screen and (min-width:1000px) {
-        body {
-            max-width: 1000px;
         }
     }
