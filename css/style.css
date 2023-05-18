@@ -161,6 +161,7 @@ header img {
 
 }
 
+
 header h2 {
     display: flex;
     margin-top: 0;
@@ -171,6 +172,24 @@ header h2 {
     padding: (--primary-padding);
     color: white;
     text-shadow: var(--shadow-dark);
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.1em;
+    border-radius: var(--border-radius);
+    height: auto;
+    margin: 0;
+    margin-right: 5px;
+    padding: 5px;
+    box-shadow: var(--shadow-dark);
+}
+
+.container h2 {
+    display: flex;
+    color: var(--secondary-color);
+    text-shadow: var(--text-shadow-light);
+    background-color: #EBD4A2;
 }
 
 header p {
@@ -260,16 +279,7 @@ this isn't working correctly in all browsers
 }
 */
 
-h2 {
-    font-family: var(--secondary-font);
-    font-size: 1.1em;
-    border-radius: var(--border-radius);
-    height: auto;
-    margin: 0;
-    /*    margin-right: 5px;*/
-    padding: 5px;
-    box-shadow: var(--shadow-dark);
-}
+
 
 /*
 #myCV {
@@ -300,12 +310,6 @@ h2 {
 
 }
 
-.container h2 {
-    display: flex;
-    color: var(--secondary-color);
-    text-shadow: var(--text-shadow-light);
-    background-color: #EBD4A2;
-}
 
 
 #pdfSheet {
@@ -434,7 +438,7 @@ a:visited {
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     p {
@@ -465,6 +469,10 @@ a:visited {
         #logo {
             height: 8em;
             width: 8em;
+        }
+
+        h1 {
+            font-size: 3em;
         }
 
         #name {
@@ -512,6 +520,10 @@ a:visited {
         #baseballCard {
             margin-top: 10px;
             border-radius: var(--border-radius);
+        }
+
+        p {
+            font-size: 1.1rem;
         }
     }
 
