@@ -7,18 +7,16 @@
  <meta name="description" content="GRM50000 Color Picker | Enter a color name or hex and see it displayed">
  <meta property="og:description" content="GRM50000 Color Picker | Enter a color name or hex and see it displayed">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Template | GaryReidMusic.com</title>
+ <title>Contact Us | GaryReidMusic | GRM50000</title>
  <!--    favicon-->
  <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
 
  <!-- font awesome -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
- <link rel="stylesheet" href="../css/stylerando.css">
-
+ <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-
 
  <header id="header">
   <!-- name script -->
@@ -56,6 +54,7 @@
    </div>
   </div>
  </header>
+
  <!-- exemplary topnav 512 
         between header and main -->
 
@@ -65,6 +64,8 @@
    <a href="all-music.html">Music</a>
    <a href="adobe-suite.html">Adobe</a>
    <a href="all-web.html">Web Coding </a>
+   <a href="contact.html">Contact</a>
+
   </div>
   <!-- nav script -->
   <script>
@@ -86,38 +87,82 @@
 
  <!-- ^exemplary topnav 512 
         between header and main -->
- <main id="main">
+ <main id="oneTwoMed">
   <article class="container">
    <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
 
-   <h2 class="article_h2">Videos</h2>
-   <p>Videos I made using Adobe AfterEffects and Premiere Pro</p>
-   <br>
+   <h2 class="article_h2">Project HEX</h2>
+   <p>Insert a Hex Code (Include #) or type 'red', 'orange', etc... and hit the 'Show Me!' button.</p>
    <!-- space-->
-   <p class="buttonFake" id="dmtAd">Daily Music Thing Ad</p>
-   <p class="buttonFake" id="animatedLogo">Animated Logo</p>
-   <p class="buttonFake" id="Ad2">Ad2</p>
-   <p class="buttonFake" id="Ad3">Ad3</p>
-   <br>
+   <p>This will be growing over time, so stay tuned!</p>
   </article>
 
   <article class="container" id="randoFeature">
    <img class="article_img" id="article_2_img" src="../images/gradientColorWheel.png" alt="ColorWheel by 8 leaf-clover, https://commons.wikimedia.org/w/index.php?curid=113344793" width="100" height="100" style="float: right">
 
-   <section id="Display">
-    <h2 class="article_h2">Display</h2>
+   <section id="contactUs">
+    <h2 class="article_h2">Contact Us</h2>
+    <p>Maybe This Will Work</p>
 
 
-    <!--embed YT-->
-    <figure>
-     <div>
-      <span><iframe src="https://www.youtube.com/embed/DlBNsSPTjFA?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;wmode=transparent" allowfullscreen="true" style="border:5px solid #A20; border-radius: 10px; width:100%;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe></span>
-     </div>
-     <figcaption><span class="uppercase">DailyMusicThing Ad, Created with Adobe After Effects</span></figcaption>
-    </figure>
+    <!-- form -->
+    <form action="mailto:imaginejesus@hotmail.com" method="post" id="saveForm">
+     <fieldset>
+      <legend>Let's Stay In Touch!</legend>
+
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" value="" placeholder="Your First Name" required autofocus />
+      <br>
+      <label for="first_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" value="" placeholder="Your Last Name" required autofocus />
+      <br>
+      <label for="first_name">Email</label>
+      <input type="email" id="email" name="email" value="" placeholder="your@email.com" required autofocus />
+
+      <input type="reset" id="reset" value="Reset" />
+
+      <label for="Interests">Interests:</label>
+      <select id="interests" name="interests">
+       <option value="Select A Location">Choose Your Interest</option>
+       <option value="Music">Music</option>
+       <option value="Adobe">Adobe Design</option>
+       <option value="HTML">HTML, CSS, JS</option>
+      </select>
+      <label for="message">Questions/Comments:</label>
+      <textarea name="message" id="message" placeholder="Write Your Message Here" rows="8"></textarea>
+      <label for="newsletter" class="newsletter">Sign up for our e-newsletter:</label>
+      <ul class="radioList">
+       <li><input type="radio" id="newsletter" name="newsletter" value="yes" />Yes </li>
+       <li><input type="radio" id="newsletter" name="newsletter" value="no" />No </li>
+      </ul>
+
+      <input type="submit" id="submit" value="Yes, Let's Keep In Touch" />
+     </fieldset>
+    </form>
+    <!--end form -->
    </section>
-   <!--            embed-->
-
+   <!--
+// <div>
+    // <label for="hex1">Hex 1 </label>
+    // <input type="text" id="hex1" name="hex1"><br>
+    //
+    // <label for="hex2">Hex 2 </label>
+    // <input type="text" id="hex2" name="hex2"><br>
+    //
+    // <label for="hex3">Hex 3 </label>
+    // <input type="text" id="hex3" name="hex3"><br>
+    //
+    // <label for="hex4">Hex 4 </label>
+    // <input type="text" id="hex4" name="hex4"><br>
+    //
+    // <label for="hex5">Hex 5 </label>
+    // <input type="text" id="hex5" name="hex5"><br>
+    //
+    // <label for="hex6">Hex 6 </label>
+    // <input type="text" id="hex6" name="hex6"><br>
+    // <input type="submit" value="Submit">
+    // </div>
+-->
   </article>
 
 
@@ -148,13 +193,3 @@
 </body>
 
 </html>
-
-<!--(((AUDIO CLIP ))) 
-            
-<audio controls autoplay id="playThis">
-<source src="myNameIsForrest.mp3" type="audio/mpeg">
-</audio>
-
-(((AUDIO CLIP )))-->
-
-<!--This was a distraction - change anything-->

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Comment Placeholder -->
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <!--    viewport-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>GR Forrest Gump</title>
+ <!-- For some reason the page displays better without the Reset Stylesheet   <link rel="stylesheet" href="css/reset.css">-->
+ <link rel="stylesheet" href="css/style.css">
+ <script src="scripts/script.js"></script>
+
+ <!--    Google Fonts-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Allan:wght@400;700&display=swap" rel="stylesheet">
+ <!--  end of Google Fonts-->
+
+ <!--    end of head-->
+</head>
+
+<body>
+ <header id="header">
+  <a onclick="document.getElementById('playThis').play();"><img id="moviePoster" src="images/moviePoster.png" alt="Forrest Gump Movie Poster"></a>
+  <h1>Movie Commentary: Forrest Gump</h1>
+
+  <h2>Life is Like a Box of Chocolates
+   <!--(((AUDIO CLIP )))-->
+   <audio controls autoplay id="playThis">
+    <source src="assets/myNameIsForrest.mp3" type="audio/mpeg">
+   </audio>
+   <!--(((AUDIO CLIP )))-->
+  </h2>
+
+  <p>If you haven't watched Forrest Gump yet, you owe it to yourself to take the time to do so. It's an epic <em>Hero's Journey</em> that follows a multiply-challenged boy along his path from humble beginnings to... Well, you'll see, won't you?
+  </p>
+  <!--        <a href="#" id="learnmoreA" class="btn">Learn More</a>-->
+
+ </header>
+
+ <main id="main">
+  <article class="container art">
+   <img class="article_img" src="images/youngForrestandJenny.jpg" alt="Forrest and Jenny" style="float: right">
+   <!-- h2{Article Heading}+p>Lorem15    -->
+
+   <h2 class="none">Origin and Departure</h2>
+   <p>The son of a single mother in rural Alabama, young Forrest is encumbered by handicapped legs and a mental disability, which find him burdened by great physical and social challenges.</p>
+   <!-- space-->
+   <p>Forrest meets Jenny, a schoolgirl in his town, and they immediately become best friends, "like peas and carrots." This gives Forrest companionship and a new wind in his young sails. After Jenny helps him break free of his physical disablity, Forrest becomes a surprise local football hero and is asked to join the Army.</p>
+  </article>
+
+  <article class="container art">
+   <img class="article_img" src="images/forrestRunning.png" alt="Forrest Running" style="float: right">
+   <!-- h2{Article Heading}+p>Lorem15    -->
+
+   <h2 class="none">Initiation and Abyss</h2>
+
+   <p>After joining the Army, Forrest is thrust off to Vietnam, but not before Jenny finds trouble and runs away from her hometown, and from Forrest. In Vietnam Forrest finds a new friend in <em>Bubba</em>. During a heated melee with the enemy, Bubba is fatally wounded, leaving Forrest alone, again.</p>
+   <!-- space-->
+   <p>Upon returning home from Vietnam, Forrest faces his biggest challenge yet: being alone in the world after the death of his mother, and Jenny leaving him again after their one-night fling. Soon after, he sets out running. This becomes a pilgrimage that will eventually take him across America four times.</p>
+  </article>
+  <article id="art3" class="container">
+   <img id="ForrestAndSon" class="hideBoth" src="images/forrestandson.png" alt="Forrest Gump meets his son" height="200" style="float: right">
+   <!-- h2{Article Heading}+p>Lorem15    -->
+   <h2 class="none" id="spoiler" onclick="myFunction(); myFunction1();">
+    <!-- , style.display = 'none' -->
+    Show / Hide Spoiler
+   </h2>
+   <div id="article3" class="hideBoth">
+    <p>After running for more than three years, Forrest remembers, "You have to put the past behind you before you can move on," (like his mama always said) and he finally stops running, even with dozens of followers behind him eagerly waiting on his any word.</p>
+    <!-- space-->
+    <p>Forrest arrives in Jenny's new town to find that she has a son, and that Forrest is his father. She also reveals to him that she is very sick. They grow closely together "like peas and carrots again," and Forrest works up the courage to ask her to marry him. She soon passes away and Forrest our hero then begins a new journey, as a single parent of a very bright young boy.</p>
+   </div>
+  </article>
+
+
+ </main>
+ <footer>
+  <a href="mailto:garyreidmusic@gmail.com" target="_blank" style="color:white">
+   <p>&copy;2023 GRM50000</p>
+  </a>
+ </footer>
+
+
+
+
+ <!--    javascript link-->
+ <!--end of page-->
+</body>
+
+</html>

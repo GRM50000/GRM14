@@ -3,118 +3,43 @@
 <!-- Comment Placeholder -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Grid 0 768 1024</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Grid 0 768 1024</title>
+ <link rel="stylesheet" href="css/reset.css">
+
+ <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <main>
+ <main id="#contactMain">
 
-        <h1>Tell us about your home.</h1><br>
-        <section class="TellUs">
-            <h2>Address</h2>
-            <h3>your information is private</h3>
-        </section>
-        <!--  section.Grid#Grid${huh$}*12  -->
-        <section class="Grid" id="Grid1">
-            <label for="Address1">Address</label>
-            <input type="text" id="Address1" name="Address1" placeholder="Enter an address" required>
-        </section>
-        <section class="Grid" id="Grid2"><label for="Address2">Address 2</label>
-            <input type="text" name="Address2" id="Address2" placeholder="Apt Number">
-        </section>
-        <section class="Grid" id="Grid3"><label for="State">State</label>
-            <input type="text" name="State" id="State" placeholder="State" required>
-        </section>
-        <section class="Grid" id="Grid4"><label for="City">City</label>
-            <input type="text" name="City" id="City" placeholder="City" required>
-        </section>
-        <section class="Grid" id="Grid5"><label for="ZipCode">Zip Code</label>
-            <input type="text" name="ZipCode" id="ZipCode" placeholder="Zip Code" required>
-        </section>
+  <h1>Tell us about your home.</h1><br>
+  <section class="TellUs">
+   <h2>Address</h2>
+   <h3>your information is private</h3>
+  </section>
 
+  <section class="Grid" id="Grid1"><label for="name">Your Name</label>
+   <input type="text" id="name1" name="name1" placeholder="Name">
+  </section>
+  <section class="Grid" id="Grid2"><label for="State">State</label>
+   <input type="text" name="State" id="State" placeholder="State">
+  </section>
+  <section class="Grid" id="Grid3"><label for="City">City</label>
+   <input type="text" name="City" id="City" placeholder="City">
+  </section>
+  <section class="Grid" id="Grid4"><label for="ZipCode">Zip Code</label>
+   <input type="text" name="ZipCode" id="ZipCode" placeholder="Zip Code">
+  </section>
+  <section>
+   <button class="Grid" id="Grid5">SignMeUp
+   </button>
+  </section>
 
-        <!--        MidSection-->
-
-
-        <section class="TellUs">
-            <h2>Bed &amp; Bath</h2>
-            <h3>what is your home like?</h3>
-        </section>
-
-
-        <section class="Grid" id="Grid6"><label for="HomeType">Home Type</label>
-            <select name="HomeType" id="HomeType">
-                <option value="House">House</option>
-                <option value="Apt">Apt</option>
-                <option value="Shack">Shack</option>
-                <option value="Mansion">Mansion</option>
-            </select>
-        </section>
-        <section class="Grid" id="Grid7">
-            <label for="RoomType">Room Type</label>
-            <select name="RoomType" id="RoomType">
-                <option value="EntireHomeApt">Entire Home/Apt</option>
-                <option value="Studio">Studio</option>
-                <option value="Closet">Closet</option>
-            </select>
-        </section>
-        <section class="Grid" id="Grid8">
-            <label for="Bedrooms">Bedrooms</label>
-            <!-- select#Bedrooms+(option{$}*3)-->
-            <select name="Bedrooms" id="Bedrooms">
-                <option value="1">1 Bedroom</option>
-                <option value="2">2 Bedrooms</option>
-                <option value="3">3 Bedrooms</option>
-            </select>
-        </section>
-        <section class="Grid" id="Grid9">
-            <label for="Bathrooms">Bathrooms</label> <select name="Bathrooms" id="Bathrooms">
-                <option value="1">1 Bathroom</option>
-                <option value="2">2 Bathrooms</option>
-                <option value="3">3 Bathrooms</option>
-            </select>
-        </section>
-        <section class="Grid" id="Grid10">
-            <label for="King">King</label>
-            <select name="King" id="King">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </section>
-        <section class="Grid" id="Grid11">
-            <label for="Queen">Queen</label>
-            <select name="Queen" id="Queen">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </section>
-        <section class="Grid" id="Grid12">
-            <label for="Full">Full</label><select name="Full" id="Full">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </section>
-        <section class="Grid" id="Grid13">
-            <label for="Twin">Twin</label>
-            <select name="Twin" id="Twin">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-
-        </section>
-        <section class="Grid" id="Grid14">SignMeUp</section>
-
-    </main>
+ </main>
 
 </body>
 
