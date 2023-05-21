@@ -3,7 +3,6 @@
  --primary-font: 'Aldrich', Verdana, sans-serif;
  --secondary-font: 'PT Mono', monospace;
  /*spacing*/
- --border-radius: 10px;
  --primary-padding: 5px;
  --primary-margin: 5px;
  /*colors*/
@@ -12,7 +11,7 @@
  --bright-color: #FDFD96;
  --link-color: #00008B;
  /* borders and shadows*/
- --text-shadow-light: 1px 1px 1px #999;
+ --border-radius: 10px;
  --shadow-dark: 1px 1px 1px #555;
 }
 
@@ -21,7 +20,7 @@
  --bg-color: #aaa;
  --bright-color: #eee;
  --link-color: #991;
- --secondary-color: black;
+ --secondary-color: #444;
 
  .article_img,
  header img {
@@ -34,14 +33,14 @@
 }
 
 #logo {
- --sameNum: 8.5em;
+ --sameNum: 7.5em;
  height: var(--sameNum);
  width: var(--sameNum);
+ background-image: radial-gradient(var(--secondary-color), orange, #a20);
  border: 3px var(--bright-color) solid;
  border-radius: var(--border-radius);
  box-shadow: var(--shadow-dark);
  float: right;
- background-image: radial-gradient(var(--secondary-color), orange, #a20);
  margin: var(--primary-margin);
 }
 
@@ -53,27 +52,16 @@
  margin-left: 2em;
 }
 
-#name {
- background-color: grey;
- border: 2px solid var(--bright-color);
- border-radius: var(--border-radius);
- box-shadow: var(--shadow-dark);
- color: white;
- cursor: pointer;
- margin: 5px;
- margin-bottom: 0;
- margin-top: 0;
-}
 
 /*Nav Menu Try*/
 
 .topnav {
+ position: relative;
  background-color: var(--bg-color);
- border: 1px solid #a20;
+ border: 2px solid var(--secondary-color);
  border-radius: var(--border-radius);
  margin: var(--primary-margin);
  overflow: hidden;
- position: relative;
 }
 
 .topnav #myLinks {
@@ -112,10 +100,10 @@
 /*Nav Menu Try*/
 
 body {
- max-width: 1000px;
- margin: auto;
- font-family: var(--primary-font);
  background-color: var(--bg-color);
+ font-family: var(--primary-font);
+ margin: auto;
+ max-width: 1000px;
 }
 
 #fixBlock {
@@ -124,39 +112,38 @@ body {
 
 header {
  display: table;
- background-image: linear-gradient(to top, var(--bg-color), var(--bright-color), var(--secondary-color));
- border: 5mm double var(--secondary-color);
- border-radius: var(--border-radius);
- padding: var(--primary-padding);
- padding-bottom: 0;
- padding: var(--primary-padding);
- padding-bottom: 0;
  position: relative;
+ background-image: linear-gradient(to top, var(--bg-color), var(--bright-color), var(--secondary-color));
+ border: 2mm solid var(--secondary-color);
+ border-radius: var(--border-radius);
  margin: var(--primary-margin);
+ padding: var(--primary-padding);
+ padding-bottom: 0;
  animation: mymove 8s infinite;
 }
 
 @keyframes mymove {
  50% {
-  border: 5mm double var(--bright-color);
+  border: 2mm solid var(--bright-color);
  }
 }
 
 h1 {
- margin: var(--primary-margin);
- text-shadow: var(--shadow-dark);
  font-size: 1.5em;
+ margin: var(--primary-margin);
+ margin-bottom: 0;
+ text-shadow: var(--shadow-dark);
 }
 
 header h2 {
  display: flex;
- margin-top: 0;
  background-color: var(--secondary-color);
+ color: white;
  height: auto;
  margin: 3px;
  margin-bottom: 10px;
+ margin-top: 0;
  padding: (--primary-padding);
- color: white;
  text-shadow: var(--shadow-dark);
 }
 
@@ -164,39 +151,40 @@ h2 {
  font-family: var(--secondary-font);
  font-size: 1.1em;
  border-radius: var(--border-radius);
+ box-shadow: var(--shadow-dark);
  height: auto;
  margin: 0;
  margin-right: 5px;
  padding: 5px;
- box-shadow: var(--shadow-dark);
 }
 
 .container h2 {
  display: flex;
  color: var(--secondary-color);
- text-shadow: var(--text-shadow-light);
+ text-shadow: var(--shadow-dark);
  background-color: var(--bright-color);
 }
 
 .buttonFake {
  display: block;
- position: absolute;
- left: var(--primary-margin);
  bottom: var(--primary-margin);
+ left: var(--primary-margin);
+ position: absolute;
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 2px 2px 2px black;
  font-size: smaller;
  margin: var(--primary-margin);
- background-color: white;
- box-shadow: 2px 2px 2px black;
  padding: 5px;
- border-radius: 5px;
 }
 
 .buttonFake1 {
+ display: inline;
  background-color: white;
  border-radius: 5px;
  box-shadow: 2px 2px 2px black;
  font-size: smaller;
- margin: var(--primary-margin);
+ margin: 5px;
 }
 
 #sep {
@@ -204,11 +192,10 @@ h2 {
 }
 
 header p {
- margin: var(--primary-margin);
- padding: var(--primary-padding);
  flex: right;
+ margin: 0 var(--primary-margin);
+ padding: var(--primary-padding);
  text-align: left;
- /*    padding-bottom: 5px;*/
 }
 
 header a:link {
@@ -220,28 +207,24 @@ header a:visited {
 }
 
 #playingCard {
+ border-radius: var(--border-radius);
  width: 90%;
  height: auto;
  margin: auto;
- padding-left: var(--primary-padding);
  margin-bottom: 2.5em;
- border-radius: var(--border-radius);
-
+ padding-left: var(--primary-padding);
 }
 
 .container {
  position: relative;
+ background-color: #bbb;
  border: 1px black solid;
  border-radius: var(--border-radius);
+ box-shadow: var(--shadow-dark);
  margin: var(--primary-margin);
  padding: var(--primary-padding);
  padding-bottom: 0;
- background-color: #bbb;
- box-shadow: var(--shadow-dark);
 }
-
-/* when I change the padding on ^this, it only fucks up article_img_1*/
-
 
 #ytVideo {
  border-radius: 10px;
@@ -293,13 +276,13 @@ img {
  width: 95%;
  height: auto;
  margin: var(--primary-margin);
- border-radius: 20px;
+ border-radius: var(--border-radius);
  margin-bottom: 1em;
 }
 
 p {
- margin-top: 5px;
  font-size: .8rem;
+ margin-top: 5px;
  margin-left: 5px;
 }
 
@@ -314,34 +297,26 @@ main {
 footer {
  display: grid;
  position: fixed;
- grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
  bottom: 0;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
  background-color: var(--bright-color);
  border-top-left-radius: 20px;
  border: 3px solid var(--bg-color);
- /*    width: 100vw;
-    */
- /*    margin-bottom: 0;*/
  border-bottom: none;
  border-right: none;
- /*    margin-top: 3px;*/
  padding: 5px;
  padding-bottom: 2px;
- /*    padding-top: 5px;*/
- /*    justify-content: space-evenly;
-    */
 }
 
 footer a {
+ text-align: center;
+ color: var(--secondary-color);
  font-size: 2vw;
  border: 2px solid var(--secondary-color);
- /*    color: black;*/
- margin: auto;
- padding: 2px 3px;
+ margin: 10px 3px;
+ padding: 1px 1px;
  border-radius: var(--border-radius);
- transform: rotate(-3deg);
- margin-bottom: 4px;
- margin-top: 1px;
+ transform: rotate(-6deg);
 }
 
 footer a:link {
@@ -362,26 +337,61 @@ footer i {
 }
 
 a:link {
- cursor: pointer;
- text-decoration: none;
  color: #00008B;
+ cursor: pointer;
  font-weight: 700;
+ text-decoration: none;
 }
 
 a:visited {
- text-decoration: none;
  color: #00008B11;
+ text-decoration: none;
 }
 
+/* buttons on CONTACT form */
+input[type=text],
+input[type=submit],
+input[type=email],
+input[type=message] {
+ border-radius: var(--border-radius);
+ padding: var(--primary-padding);
+}
+
+/* ^buttons on CONTACT form */
+
+.projects {
+ display: inherit;
+}
+
+.projects button {
+ width: 100%;
+ margin: 0 var(--primary-margin);
+}
+
+.projects button:last-of-type {
+ margin-bottom: 1em;
+}
+
+fieldset {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr;
+}
+
+iframe {
+ max-width: 95% !important;
+ width: auto !important;
+ height: auto !important;
+}
 
 /*_RESPONSIVITY_*/
 /*_RESPONSIVITY_*/
 /*_RESPONSIVITY_*/
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 481px) {
  #logo {
-  height: 6.5em;
-  width: 6.5em;
+  height: 7em;
+  width: 7em;
  }
 
  h1 {
@@ -395,7 +405,7 @@ a:visited {
  }
 
  #icon {
-  margin-left: 10em;
+  margin-left: 6em;
  }
 
  header p {
@@ -429,7 +439,11 @@ a:visited {
   padding: 0;
  }
 
- @media only screen and (min-width:768px) {
+ #kicksArticle {
+  width: 192%;
+ }
+
+ @media only screen and (min-width:769px) {
   #logo {
    height: 8em;
    width: 8em;
@@ -442,6 +456,7 @@ a:visited {
   #icon {
    margin-left: 18em;
   }
+
 
   #main {
    display: grid;
@@ -466,9 +481,12 @@ a:visited {
   .article_img {
    float: left;
   }
+/*
+#codePen {
+ float: left;
+}*/
 
   article {
-   /* KEY THING -display-grid- KEY THING*/
    display: flex;
    flex-direction: column;
   }
@@ -493,28 +511,32 @@ a:visited {
   #space {
    height: 3rem;
   }
+
+  #kicksArticle {
+   width: 93%;
+  }
+
+  footer {
+   margin-left: 0;
+   margin-right: auto;
+  }
  }
 
- @media only screen and (min-width:1000px) {
+ @media only screen and (min-width:1025px) {
   #logo {
-   height: 10em;
-   width: 10em;
+   height: 9.75em;
+   width: 9.75em;
   }
 
   body {
-   background: var(--bg-color);
+   background: var(--secondary-color);
    max-width: 1000px;
   }
-
-  .topnav {
-   border: var(--secondary-color) 1px solid;
-  }
-
  }
 
  /*
 
-this isn't working correctly in all browsers
+this isn't working correctly in all browsers:
 .bigCaps:first-letter {
     font-family: sans-serif;
     font-weight: 700;
@@ -524,3 +546,18 @@ this isn't working correctly in all browsers
     color: var(--secondary-color);
 }
 */
+
+ /*
+I stopped using this: 
+
+ #name {
+ background-color: grey;
+ border: 2px solid var(--bright-color);
+ border-radius: var(--border-radius);
+ box-shadow: var(--shadow-dark);
+ color: white;
+ cursor: pointer;
+ margin: 3px;
+ margin-bottom: 0;
+ margin-top: 0;
+}*/

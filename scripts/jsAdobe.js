@@ -21,3 +21,7 @@ document.getElementById('animated3').onclick = function () {
 document.getElementById('animated4').onclick = function () {
  document.getElementById('ytVideo').src = 'https://www.youtube.com/embed/ytQ7mq5bg4w';
 };
+
+document.getElementById('card1').onclick = function () {
+ document.getElementById('ytVideo').src = '../images/playingCard_PNG.png';
+};

@@ -46,9 +46,7 @@
    <div>
     <h2 id="demo">Music and Media
      <!-- TheSwitch -->
-     <div class="darkButton"><img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon">
-     </div>
-
+     <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
      <!-- TheSwitch -->
     </h2>
    </div>
@@ -62,7 +60,7 @@
   <a href="../index.html" class="active">Home - Menu</a>
   <div id="myLinks">
    <a href="all-music.html">Music</a>
-   <a href="adobe-suite.html">Adobe</a>
+   <a href="digital-design.html">Adobe</a>
    <a href="all-web.html">Web Coding </a>
    <a href="contact.html">Contact</a>
 
@@ -91,10 +89,8 @@
   <article class="container">
    <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
 
-   <h2 class="article_h2">Project HEX</h2>
-   <p>Insert a Hex Code (Include #) or type 'red', 'orange', etc... and hit the 'Show Me!' button.</p>
-   <!-- space-->
-   <p>This will be growing over time, so stay tuned!</p>
+   <h2 class="article_h2">Contact Us</h2>
+   <p>Trying to Build a Contact form here, but I don't know how to send it...</p>
   </article>
 
   <article class="container" id="randoFeature">
@@ -104,80 +100,51 @@
     <h2 class="article_h2">Contact Us</h2>
     <p>Maybe This Will Work</p>
 
-
-    <!-- form -->
-    <form action="mailto:imaginejesus@hotmail.com" method="post" id="saveForm">
+    <form action="mailto:imaginejesus@hotmail.com?subject=Send_This_Form" method="post" id="saveForm">
      <fieldset>
       <legend>Let's Stay In Touch!</legend>
 
       <label for="first_name">First Name</label>
-      <input type="text" id="first_name" name="first_name" value="" placeholder="Your First Name" required autofocus />
-      <br>
+      <input type="text" id="first_name" name="first_name" value="" placeholder="Your First Name" required autofocus>
+
       <label for="first_name">Last Name</label>
-      <input type="text" id="last_name" name="last_name" value="" placeholder="Your Last Name" required autofocus />
+      <input type="text" id="last_name" name="last_name" value="" placeholder="Your Last Name" required>
       <br>
       <label for="first_name">Email</label>
-      <input type="email" id="email" name="email" value="" placeholder="your@email.com" required autofocus />
-
-      <input type="reset" id="reset" value="Reset" />
-
-      <label for="Interests">Interests:</label>
+      <input type="email" id="email" name="email" value="" placeholder="your@email.com" required>
+      <br>
+      <input type="reset" class="buttonFake1" id="reset" value="Reset">
+      <br> <br>
+      <label for="interests">Interests:</label>
       <select id="interests" name="interests">
        <option value="Select A Location">Choose Your Interest</option>
        <option value="Music">Music</option>
        <option value="Adobe">Adobe Design</option>
        <option value="HTML">HTML, CSS, JS</option>
       </select>
+      <br>
       <label for="message">Questions/Comments:</label>
-      <textarea name="message" id="message" placeholder="Write Your Message Here" rows="8"></textarea>
-      <label for="newsletter" class="newsletter">Sign up for our e-newsletter:</label>
+      <textarea name="message" id="message" placeholder="Your Message Here" rows="2"></textarea>
+      <br>
+      <br>
+      <p>Sign up for our Newsletter:</p>
+
       <ul class="radioList">
-       <li><input type="radio" id="newsletter" name="newsletter" value="yes" />Yes </li>
-       <li><input type="radio" id="newsletter" name="newsletter" value="no" />No </li>
+       <li><input type="radio" class="newsletter" name="newsletter" value="yes">Yes </li>
+       <li><input type="radio" class="newsletter" name="newsletter" value="no">No </li>
       </ul>
 
-      <input type="submit" id="submit" value="Yes, Let's Keep In Touch" />
+      <input type="submit" id="submit" class="buttonFake1" value="Yes, Let's Keep In Touch">
      </fieldset>
     </form>
     <!--end form -->
    </section>
-   <!--
-// <div>
-    // <label for="hex1">Hex 1 </label>
-    // <input type="text" id="hex1" name="hex1"><br>
-    //
-    // <label for="hex2">Hex 2 </label>
-    // <input type="text" id="hex2" name="hex2"><br>
-    //
-    // <label for="hex3">Hex 3 </label>
-    // <input type="text" id="hex3" name="hex3"><br>
-    //
-    // <label for="hex4">Hex 4 </label>
-    // <input type="text" id="hex4" name="hex4"><br>
-    //
-    // <label for="hex5">Hex 5 </label>
-    // <input type="text" id="hex5" name="hex5"><br>
-    //
-    // <label for="hex6">Hex 6 </label>
-    // <input type="text" id="hex6" name="hex6"><br>
-    // <input type="submit" value="Submit">
-    // </div>
--->
   </article>
-
-
-  <!-- h2{Article Heading}+p>Lorem15
-            <h2 class="article_h2">Color Picker</h2>
-            <p>Enter a Hex Code below.</p>
-            <p>Enter a Hex Code above.</p>
-                 </article>-->
-
  </main>
  <div id="space"></div>
  <footer>
   <a href="https://github.com/GRM50000" target="_blank">
    <i class="fa-brands fa-github-square footerx">GitHub</i></a>
-
   <a href="https://www.instagram.com/garyreidmusic" target="_blank">
    <i class="fa-brands fa-instagram footerx">Instagram</i></a>
 
