@@ -3,8 +3,8 @@
  --primary-font: 'Aldrich', Verdana, sans-serif;
  --secondary-font: 'PT Mono', monospace;
  /*spacing*/
- --primary-padding: 5px;
- --primary-margin: 5px;
+ --primary-padding: 3px;
+ --primary-margin: 3px;
  /*colors*/
  --bg-color: orange;
  --secondary-color: #A20;
@@ -34,7 +34,7 @@ img {
 }
 
 #logo {
- --sameNum: 7.5em;
+ --sameNum: 7em;
  height: var(--sameNum);
  width: var(--sameNum);
  background-image: radial-gradient(var(--secondary-color), orange, #a20);
@@ -73,7 +73,7 @@ img {
  display: block;
  color: var(--secondary-color);
  font-size: 1em;
- padding: 5px;
+ padding: 3px;
  text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ img {
 
 .active {
  position: relative;
- left: 25px;
+ left: 20px;
  background-color: var(--bright-color);
  color: var(--secondary-color);
 }
@@ -390,8 +390,8 @@ iframe {
 
 @media only screen and (min-width: 481px) {
  #logo {
-  height: 7em;
-  width: 7em;
+  height: 6.5em;
+  width: 6.5em;
  }
 
  h1 {
@@ -445,8 +445,8 @@ iframe {
 
  @media only screen and (min-width:769px) {
   #logo {
-   height: 8em;
-   width: 8em;
+   height: 7.7em;
+   width: 7.7em;
   }
 
   h1 {
