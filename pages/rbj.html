@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Not BootStrap -->
 
 <head>
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="GRM50000 Roshambo | Rock Blues Jazz">
+ <meta property="og:description" content="GRM50000 Roshambo | Rock Blues Jazz">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Gary Reid Music | Everything Music </title>
- <meta name="description" content="Gary Reid Music and Media: Web Design and Rhythm Guitar">
- <meta property="og:description" content="Gary Reid Music and Media: Web Design and Rhythm Guitar">
+ <title>GRM50000 Roshambo | Rock Blues Jazz</title>
+ <!--    favicon-->
  <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
- <!-- Font Awesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="../css/style.css">
 
+ <!-- font awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-
-
 
  <header id="header">
   <!-- name script -->
@@ -42,19 +39,18 @@
     <h1>Gary Reid Music</h1>
    </a>
 
-   <p id="headerText">I've played <a href="../pages/guitar.html" style="color:white" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="../pages/digital-design.html" style="color:#a20">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
-
-   <!-- NameButton <button id="name" onclick="myFunction()">What's Your Name?</button> NameButton -->
+   <p id="headerText">I've played <a href="../pages/guitar.html" style="color:white; text-shadow: 2px 2px 2px black" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="../pages/digital-design.html" style="color:#a20;  text-shadow: 1px 1px 1px yellow">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
 
    <div>
     <h2 id="demo">Music and Media
-     <!-- TheSwitch -->
+     <!-- The Switch -->
      <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
-     <!-- TheSwitch -->
+     <!-- The Switch -->
     </h2>
    </div>
   </div>
  </header>
+
  <!-- exemplary topnav 512 
         between header and main -->
 
@@ -63,7 +59,7 @@
   <div id="myLinks">
    <a href="all-music.html">Music</a>
    <a href="digital-design.html">Adobe</a>
-   <a href="all-web.html">Web Coding </a>
+   <a href="all-web.html">Web Coding</a>
    <a href="contact.html">Contact</a>
   </div>
   <!-- nav script -->
@@ -86,43 +82,31 @@
 
  <!-- ^exemplary topnav 512 
         between header and main -->
-
- <main id="main">
-  <article class="container"><a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank">
-    <img class="article_img" src="../images/GretschSquare400.png" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: left"></a>
-   <h2>Backing Tracks</h2>
-   <p class="bigCaps">On YouTube I've been posting Rhythm Guitar Tracks for people to play along with since 2017... </p><br>
-   <p><a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank" class="buttonFake" role="button">
-     Check them out Here!</a></p>
-  </article>
-
+ <main id="oneTwoMed">
   <article class="container">
-   <a href="https://garyreidmusic.bandcamp.com/album/healing-fractures-gary-reid-music" target="_blank">
-    <img class="article_img" src="../images/getThis.jpg" alt="My Music Audio" style="float: right" width="100" height="100">
-   </a>
-   <h2 class="article_h2">My Music</h2>
-   <p class="bigCaps">I've written hundreds of <em>Original</em> Songs and I've published about <strong><em>41</em></strong> of them...</p><br>
-   <p><a href="https://garyreidmusic.bandcamp.com/album/healing-fractures-gary-reid-music" class="buttonFake" target="_blank">Get My Songs Here!</a></p>
+   <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
+   <h2 class="article_h2">Roshambo</h2>
+   <p><em>Rock Paper Scissors</em> hasn't evolved in 400 years, until now...</p>
+   <div id="space"></div>
+   <button id="name" class="buttonFake" onclick="myFunction()">What's Your Name?</button>
+
   </article>
 
+  <article class="container" id="rbjFrame">
+   <img class="article_img" id="article_2_img" src="../images/gradientColorWheel.png" alt="Gradient Color Wheel" width="100" height="100" style="float: right">
+   <h2 class="article_h2">Rock Blues Jazz</h2>
+   <p id="blurb">If you like Rock-Paper-Scissors<br>
+    and Music... you might love this:</p>
+   <div id="results">
+   </div>
+   <div class="sep"></div>
+   <button class="buttonFake1" style="width:90%; padding:10px" onClick="window.location.reload();">Play Again!</button>
 
-  <article class="container" id="kicksArticle">
-   <a href="../pages/kicks.html">
-    <img class="article_img" width="100" height="100" src="../images/3.png" alt="Color Picker" style="float: left"></a>
-   <h2>Kick Drum Metronome</h2>
-   <p class="bigCaps">Bass Drum Metronome Thump, choose your Beats-Per-Minute.<br>Great for timing.</p>
-   <p>I use these for guitar practice</p>
-   <br>
-   <p>
-    <a href="../pages/kicks.html" class="buttonFake">Feel the Thump</a>
-   </p>
+
+   <div class="sep"></div>
   </article>
-
-
-  <!--wait-->
-
  </main>
- <div id="space"></div>
+ <div class="sep"></div>
  <footer>
   <a href="https://github.com/GRM50000" target="_blank">
    <i class="fa-brands fa-github-square footerx">GitHub</i></a>
@@ -138,6 +122,8 @@
 
   <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
  </footer>
+ <script src="../scripts/ex20.js"></script>
+
  <script src="../scripts/jsDark.js"></script>
 </body>
 

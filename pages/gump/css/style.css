@@ -1,199 +1,180 @@
-/* - Took a little insp, but not direct words from: 
+/* - Took a little writing inspo, but not direct words from: 
 https://prezi.com/vpsuct1osz8p/forrest-gump-heros-journey/ - */
-
-/*
-Css Variables Examples:
---NameOfVariable: red;
---variable-name: 10px;
-*/
 
 /*ESTABLISH GLOBAL VARIABLES*/
 :root {
-    --primary-font: 'Aldrich', Verdana, sans-serif;
-    --secondary-font: 'Allan', cursive;
-    /*spacing*/
-    --border-radius: 10px;
-    --primary-padding: 10px;
-    --primary-margin: 10px;
+ --primary-font: 'Aldrich', Verdana, sans-serif;
+ --secondary-font: 'Allan', cursive;
+ /*spacing*/
+ --border-radius: 10px;
+ --primary-padding: 10px;
+ --primary-margin: 10px;
 
-    /*colors*/
-    --primary-text: #444;
-    --primary-color: #f4ebce;
-    --secondary-color: yellow;
-    --background-color: #f4ebce;
-    --chocolate: #7B3F00;
-    --almost-white: #444;
-    /* borders and shadows*/
-    --temp-border: 2px black double;
-    --secondary-border: 3mm ridge yellow;
-    --text-shadow-dark: 1px 1px 1px #111;
-    --text-shadow-light: 1px 1px 1px #eee;
-    --box-shadow-dark: 1px 1px 1px #111;
-    --box-shadow-light: 1px 1px 1px #eee;
-    --cursor: pointer;
+ /*colors*/
+ --primary-text: #444;
+ --primary-color: #f4ebce;
+ --secondary-color: yellow;
+ --chocolate: #7B3F00;
+ --almost-white: #444;
+ /* borders and shadows*/
+ --temp-border: 2px black double;
+ --secondary-border: 3mm ridge yellow;
+ --box-shadow-dark: 1px 1px 1px #111;
+ --cursor: pointer;
 }
 
-
-
 body {
-    /* *new design system* */
-    --ptext: #444;
-    --pbg: var(--chocolate);
-    --pcolor: yellow;
-    --ph2: var(--background-color);
-    /* end new design system */
-
-    font-family: var(--primary-font);
-    color: var(--primary-text);
-    background-color: var(--primary-color);
-
+ background-color: var(--primary-color);
+ color: var(--primary-text);
+ font-family: var(--primary-font);
 }
 
 header {
-    position: relative;
-    background-image: linear-gradient(to bottom, aqua, white);
-    border: var(--secondary-border);
-    border-radius: var(--border-radius);
-    padding: var(--primary-padding);
-    padding-bottom: 0;
-    margin: var(--primary-margin);
+ position: relative;
+ background-image: linear-gradient(to bottom, aqua, white);
+ border: var(--secondary-border);
+ border-radius: var(--border-radius);
+ margin: var(--primary-margin);
+ padding: var(--primary-padding);
+ padding-bottom: 0;
 }
 
 img {
-    border-radius: var(--border-radius);
+ border-radius: var(--border-radius);
 }
 
 #ForrestAndSon {
-    display: none;
+ display: none;
 }
 
 #article3 {
-    display: none;
-    /* 1 scoped variable assuming spoiler theme */
-    --primary-text: var(--chocolate);
-    color: var(--primary-text);
+ display: none;
+ /* 1 scoped variable assuming spoiler theme */
+ --primary-text: var(--chocolate);
+ color: var(--primary-text);
 }
 
 #article3 p {
-    /* 1 scoped variable assuming spoiler theme */
-    --background-color: yellow;
-    background-color: var(--background-color);
-    border-radius: var(--border-radius);
-    padding: 2px;
+ /* 1 scoped variable assuming spoiler theme */
+ --background-color: yellow;
+ background-color: var(--background-color);
+ color: var(--chocolate);
+ padding: 2px;
 }
 
 #playThis {
-    display: none;
-    width: 1px;
-    height: 1px;
+ display: none;
+ width: 1px;
+ height: 1px;
 }
 
 h1 {
-    color: var(--chocolate);
-    padding-right: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+ color: var(--chocolate);
+ padding-right: 5px;
+ margin-bottom: 5px;
+ margin-top: 5px;
 }
 
 header h2 {
-    display: flex;
-    background-color: var(--primary-color);
+ display: flex;
+ background-color: var(--primary-color);
 }
 
-header img {
-    border: 4px solid var(--background-color);
-    cursor: var(--cursor);
-    float: right;
-    height: 110px;
-    margin: var(--primary-margin);
-    margin-top: 5px;
+#moviePoster {
+ border: 4px solid var(--secondary-color);
+ cursor: var(--cursor);
+ float: right;
+ height: 8em;
+ margin: var(--primary-margin);
+ margin-top: 5px;
+}
+
+#moviePoster:hover {
+ border: 4px red solid;
 }
 
 .container {
-    border: var(--temp-border);
-    border-radius: var(--border-radius);
-    margin: var(--primary-margin);
-    padding: var(--primary-padding);
-    padding-bottom: 0;
+ border: var(--temp-border);
+ border-radius: var(--border-radius);
+ margin: var(--primary-margin);
+ padding: var(--primary-padding);
+ padding-bottom: 0;
 }
 
-/* WHY */
 .container img {
-    margin: var(--primary-margin);
-    margin-top: 0;
+ margin: var(--primary-margin);
+ margin-top: 0;
 }
-
-/* WHY when I change the padding on this, it only fucks up article_img_1 */
-
 
 .container h2 {
-    display: flex;
-    border-radius: var(--border-radius);
-    color: var(--secondary-color);
-    text-shadow: var(--box-shadow-dark);
-    /*    local variable*/
-    --bg-color: #aaf;
-    background-color: var(--chocolate);
-    /*    local variable*/
+ display: flex;
+ border-radius: var(--border-radius);
+ color: var(--secondary-color);
+ text-shadow: var(--box-shadow-dark);
+ /*    local variable*/
+ --bg-color: #aaf;
+ background-color: var(--chocolate);
+ /*    local variable*/
 }
 
 h2 {
-
-    background-color: var(--secondary-color);
-    border-radius: var(--border-radius);
-    color: var(--chocolate);
-    font-family: var(--secondary-font);
-    height: auto;
-    margin: 0;
-    padding: 5px 10px;
+ background-color: var(--secondary-color);
+ border-radius: var(--border-radius);
+ color: var(--chocolate);
+ font-family: var(--secondary-font);
+ height: auto;
+ margin: 0;
+ padding: 5px 10px;
 }
 
-
-/** Themed Class - .art **/
+/*
+Themed Class - .art *
+*/
 .art {
-    background-color: var(--pbg);
-    color: var(--ph2);
+ background-color: var(--chocolate);
+ color: var(--background-color);
 }
 
 .art h2 {
-    background-color: var(--almost-white);
+ background-color: var(--almost-white);
 }
 
 .article_img {
-    margin: var(--primary-margin);
-    margin-top: 0;
-    object-fit: contain;
-    /* border-radius: var(--border-radius); */
-    height: 200px;
+ height: 200px;
+ margin: var(--primary-margin);
+ margin-top: 0;
+ object-fit: contain;
 }
 
 article p {
-    margin-top: 10px;
+ color: var(--secondary-color);
+ margin-top: 10px;
 }
 
 footer {
-    background-color: darkblue;
-    border: 4px solid var(--secondary-color);
-    border-bottom: none;
-    border-top-left-radius: 30px;
-    color: white;
-    margin: 0;
-    padding: 0px 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ background-color: darkblue;
+ border: 4px solid var(--secondary-color);
+ border-bottom: none;
+ border-top-left-radius: 30px;
+ color: white;
+ margin: 0;
+ padding: 10px;
+ width: 100vw;
 }
 
 main {
-    padding-bottom: 40px;
-    width: 99%;
+ padding-bottom: 30px;
 }
 
 #spoiler {
-    margin-bottom: 10px;
-    --primary-color: var(--secondary-color);
-    cursor: var(--cursor);
+ margin-bottom: 10px;
+ --primary-color: var(--secondary-color);
+ cursor: var(--cursor);
 }
 
 
@@ -202,67 +183,63 @@ main {
 /*_RESPONSIVITY_*/
 
 @media only screen and (min-width: 515px) {
-    header img {
-        border: 4px solid var(--secondary-color);
-        width: 130px;
-        height: 130px;
-        /*        border-radius: var(--border-radius);*/
-        margin-top: 0;
-        margin-right: 0;
-    }
+ header img {
+  border: 4px solid var(--secondary-color);
+  width: 130px;
+  height: 130px;
+  margin-top: 0;
+  margin-right: 0;
+ }
 
-    header h2 {
-        display: flex;
-        margin: 10px 0;
-    }
+ header h2 {
+  display: flex;
+  margin: 10px 0;
+ }
 
-    h2 {
-        background-color: var(--primary-color);
-        display: inline-flex;
-        margin-top: 0;
-    }
+ h2 {
+  background-color: var(--primary-color);
+  display: inline-flex;
+  margin-top: 0;
+ }
 
-    article {
-        margin: 2%;
-    }
+ article {
+  margin: 2%;
+ }
 
-    /*
-    main {
-        width: 99%;
-    }
-*/
 }
 
 @media only screen and (min-width:821px) {
-    header img {
-        border: 4px solid var(--chocolate);
-        margin: 1em;
-        margin-bottom: 2em;
-    }
+ #moviePoster {
+  object-position: center;
+  border: 4px solid var(--chocolate);
+  --same-num: 7.8em;
+  width: var(--same-num);
+  height: var(--same-num);
+ }
 
-    #main {
-        display: grid;
-        grid-gap: 2%;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 97%;
-    }
+ #main {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 97%;
+ }
 
-    article {
-        width: 95%;
-        display: inline-block;
-    }
+ article {
+  width: 95%;
+  display: inline-block;
+ }
 
-    article img {
-        float: left;
-    }
+ article img {
+  float: left;
+ }
 
-    h2 {
-        order: -1;
-        padding-left: 10px;
-        margin-left: 0;
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
+ h2 {
+  order: -1;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+ }
 }
 
 /*__END OF RESPONSIVITY__*/

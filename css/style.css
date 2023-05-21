@@ -19,7 +19,7 @@
 /* dark mode shit */
 .dark-theme {
  --bg-color: #aaa;
- --bright-color: #eee;
+ --bright-color: #eeee;
  --link-color: #991;
  --secondary-color: #444;
  --saturate: .5;
@@ -52,7 +52,6 @@ img {
  height: .9em;
  margin-left: 2em;
 }
-
 
 /*Nav Menu Try*/
 
@@ -168,12 +167,12 @@ h2 {
 
 .buttonFake {
  display: block;
+ position: absolute;
  bottom: var(--primary-margin);
  left: var(--primary-margin);
- position: absolute;
  background-color: white;
- border-radius: 5px;
- box-shadow: 2px 2px 2px black;
+ border-radius: var(--border-radius);
+ box-shadow: 1px 1px 1px black;
  font-size: smaller;
  margin: var(--primary-margin);
  padding: 5px;
@@ -182,10 +181,10 @@ h2 {
 .buttonFake1 {
  display: inline;
  background-color: white;
- border-radius: 5px;
- box-shadow: 2px 2px 2px black;
+ border-radius: var(--border-radius);
+ box-shadow: 1px 1px 1px #333;
  font-size: smaller;
- margin: 5px;
+ margin: var(--primary-margin);
 }
 
 #sep {
@@ -316,7 +315,8 @@ footer a {
  margin: 10px 3px;
  padding: 1px 1px;
  border-radius: var(--border-radius);
- transform: rotate(-6deg);
+ /* transform: rotate(-6deg);
+ */
 }
 
 footer a:link {
@@ -348,25 +348,6 @@ a:visited {
  text-decoration: none;
 }
 
-/* buttons on CONTACT form */
-input[type=text],
-input[type=submit],
-input[type=email],
-input[type=message] {
- border-radius: var(--border-radius);
- padding: var(--primary-padding);
-}
-
-/* ^buttons on CONTACT form */
-
-.projects {
- display: inherit;
-}
-
-.projects button {
- width: 100%;
- margin: 0 var(--primary-margin);
-}
 
 .projects button:last-of-type {
  margin-bottom: 1em;
@@ -382,6 +363,80 @@ iframe {
  max-width: 95% !important;
  width: auto !important;
  height: auto !important;
+}
+
+/*PAGE SPECIFIC STYLES:*/
+
+/* buttons on CONTACT form */
+input[type=text],
+input[type=submit],
+input[type=email],
+input[type=message] {
+ border-radius: var(--border-radius);
+ padding: var(--primary-padding);
+}
+
+/* RBJ Page */
+
+.choices {
+ color: red;
+ text-shadow: 2px 2px 2px white;
+ font-size: 25px;
+ font-family: 'Rock Salt', cursive;
+ padding: .5em;
+ text-shadow: 1px 1px 1px black;
+}
+
+#bonk {
+ position: relative;
+ top: 3rem;
+ margin: 5vh 10vw;
+ border: 10px solid blue;
+ background-color: #ddd;
+ border-radius: 20px;
+ padding: 1rem 1rem 1rem 1rem;
+
+}
+
+#blurb {
+ margin-top: 0;
+ padding: var(--primary-padding);
+}
+
+#results {
+ padding: var(--primary-padding);
+ border-radius: 10px;
+ text-transform: capitalize;
+ font-size: 1.1em;
+ font-weight: 700;
+ margin-bottom: 1em;
+ margin-top: 0;
+ margin: auto;
+ width: 70%;
+ border: 1px solid black;
+}
+
+.win {
+ margin: auto;
+ background-color: forestgreen;
+ color: white;
+ padding: var(--primary-padding);
+ border-radius: var(--border-radius);
+}
+
+
+.lose {
+ margin: auto;
+ background-color: var(--secondary-color);
+ color: white;
+ border-radius: var(--border-radius);
+}
+
+.tie {
+ background-color: yellow;
+ color: red;
+ padding: var(--primary-padding);
+ border-radius: var(--border-radius);
 }
 
 /*_RESPONSIVITY_*/
@@ -433,6 +488,10 @@ iframe {
   grid-template-columns: 1fr 2fr;
   position: static;
   left: 30px;
+ }
+
+ .sep {
+  padding: 0;
  }
 
  #sep {
@@ -513,6 +572,10 @@ iframe {
    height: 3rem;
   }
 
+  .space {
+   height: 3rem;
+  }
+
   #kicksArticle {
    width: 93%;
   }
@@ -525,8 +588,8 @@ iframe {
 
  @media only screen and (min-width:1025px) {
   #logo {
-   height: 9.75em;
-   width: 9.75em;
+   height: 9em;
+   width: 9em;
   }
 
   body {
@@ -538,14 +601,7 @@ iframe {
  /*
 
 this isn't working correctly in all browsers:
-.bigCaps:first-letter {
-    font-family: sans-serif;
-    font-weight: 700;
-    initial-letter: 2;
-    padding: 5px;
-    padding-bottom: 0;
-    color: var(--secondary-color);
-}
+
 */
 
  /*
