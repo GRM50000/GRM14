@@ -188,6 +188,10 @@ h2 {
   background-image: radial-gradient(yellow, orange, red);
 }
 
+h1:visited {
+  color: wheat;
+}
+
 h1:hover {
   color: var(--bright-color);
 }
@@ -226,15 +230,13 @@ header p {
   text-align: left;
 }
 
-/*
 header a:link {
-  color: var(--link-color);
+  color: wheat;
 }
 
 header a:visited {
-  color: var(--link-color)
+  color: wheat;
 }
-*/
 
 #igpic {
   border-radius: var(--border-radius);
