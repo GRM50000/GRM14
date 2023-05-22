@@ -30,10 +30,6 @@ img {
   cursor: pointer;
 }
 
-#space {
-  height: 2rem;
-}
-
 #logo {
   --sameNum: 6em;
   height: var(--sameNum);
@@ -222,6 +218,10 @@ h1:hover {
 
 #sep {
   padding: var(--primary-padding);
+}
+
+#space {
+  height: 2rem;
 }
 
 header p {
