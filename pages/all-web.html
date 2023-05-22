@@ -1,140 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Not BootStrap -->
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>GRM50000 | Web Design </title>
- <meta name="description" content="Gary Reid Music and Media: Web Design and Rhythm Guitar">
- <meta property="og:description" content="Gary Reid Music and Media: Web Design and Rhythm Guitar">
- <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
- <!-- Font Awesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRM50000 | Web Design </title>
+  <meta name="description" content="Gary Reid | Digital Design | GRM50000">
+  <meta property="og:description" content="Gary Reid | Digital Design | GRM50000">
+  <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
 
- <header id="header">
-  <!-- name script -->
-  <script>
-   function myFunction() {
-    let person = prompt("Please enter your name", "Harry Potter?");
-    if (person != null) {
-     document.getElementById("demo").innerHTML =
-      "I am Grateful for you, " + person + "!";
-    }
-   }
+  <header id="header">
+    <!-- name script -->
+    <script>
+      function myFunction() {
+        let person = prompt("Please enter your name", "Harry Potter?");
+        if (person != null) {
+          document.getElementById("demo").innerHTML =
+            "I am Grateful for you, " + person + "!";
+        }
+      }
 
-  </script>
-  <div id="fixBlock">
-   <a href="../index.html">
-    <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
-   <a href="../index.html">
-    <h1>Gary Reid Music</h1>
-   </a>
+    </script>
+    <div id="fixBlock">
+      <a href="../index.html">
+        <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+      <a href="../index.html">
+        <h1>Gary Reid Music</h1>
+      </a>
 
-   <p id="headerText">I've played <a href="../pages/guitar.html" style="color:white" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="../pages/digital-design.html" style="color:#a20">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
+      <p id="headerText">I've played <a href="guitar.html" style="color:white; text-shadow: 2px 2px 2px black">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="digital-design.html" style="color:#a20; text-shadow: 2px 2px 2px yellow">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... though my style is still from the '80s.</p>
 
-   <!-- NameButton <button id="name" onclick="myFunction()">What's Your Name?</button> NameButton -->
+      <!-- NameButton <button id="name" onclick="myFunction()">What's Your Name?</button> NameButton -->
 
-   <div>
-    <h2 id="demo">Music and Media
-     <!-- TheSwitch -->
-     <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
-     <!-- TheSwitch -->
-    </h2>
-   </div>
-  </div>
- </header>
- <!-- exemplary topnav 512 
+      <div>
+        <h2 id="demo">Music and Media
+          <!-- TheSwitch -->
+          <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
+          <!-- TheSwitch -->
+        </h2>
+      </div>
+    </div>
+  </header>
+  <!-- exemplary topnav 512 
         between header and main -->
 
- <div class="topnav">
-  <a href="../index.html" class="active">Home - Menu</a>
-  <div id="myLinks">
-   <a href="all-music.html">Music</a>
-   <a href="digital-design.html">Adobe</a>
-   <a href="all-web.html">Web Coding </a>
+  <div class="topnav">
+    <a href="../index.html" class="active">Home - Menu</a>
+    <div id="myLinks">
+      <a href="all-music.html">Music</a>
+      <a href="digital-design.html">Adobe</a>
+      <a href="all-web.html">Web Coding</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- nav script -->
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+    </script>
+    <!-- nav bars -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-  <!-- nav script -->
-  <script>
-   function myFunction1() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-     x.style.display = "none";
-    } else {
-     x.style.display = "block";
-    }
-   }
 
-  </script>
-  <!-- nav bars -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
-   <i class="fa fa-bars"></i>
-  </a>
- </div>
-
- <!-- ^exemplary topnav 512 
+  <!-- ^exemplary topnav 512 
         between header and main -->
 
- <main id="main">
+  <main id="main">
 
-  <article class="container">
-   <a href="../pages/cv.html"><img class="article_img" width="100" height="100" src="../images/coding.png" alt="Web Design" style="float: left"></a>
-   <h2 class="article_h2">My CV/Resume</h2>
-   <p class="bigCaps">Skilled in Adobe Creative Suite, and currently studying HTML, CSS, &amp; Javascript.
-   <p>You can find me on <a href="https://github.com/GRM50000" target="_blank">GitHub</a>, CodePen,
-    <a href="https://cssbattle.dev/player/grm50000" target="_blank">CSS Battle Dev</a>, and <a href="https://stackblitz.com/@GRM50000" target="_blank">StackBlitz</a>.
-   </p>
-   <p id="sep">
-    <a href="../pages/cv.html" class="buttonFake" role="button">See my CV Here</a>
-   </p>
-  </article>
+    <article class="container">
+      <a href="../pages/cv.html"><img class="article_img" width="100" height="100" src="../images/coding.png" alt="Web Design" style="float: left"></a>
+      <h2 class="article_h2">Text CV / Resume</h2>
+      <p class="bigCaps">Skilled in Adobe Creative Suite, and currently studying HTML, CSS, &amp; Javascript.
+      <p>You can find me on <a href="https://github.com/GRM50000" target="_blank">GitHub</a>,
+        <a href="https://cssbattle.dev/player/grm50000" target="_blank">CSS Battle Dev</a>, and <a href="https://stackblitz.com/@GRM50000" target="_blank">StackBlitz</a>.
+      </p>
+      <p id="sep">
+        <a href="../pages/cv.html" class="buttonFake" role="button">See my CV Here</a>
+      </p>
+    </article>
 
-  <article class="container"><a href="https://www.codepen.io/GRM50000" target="_blank">
-    <img class="article_img" src="../images/codePen.png" id="codePen" alt="Coding HTML" width="100" height="100" style="float: right"></a>
-   <h2>CodePen</h2>
-   <p class="bigCaps">I'm GRM50000 on <a href="https://codepen.io/GRM50000/" target="_blank">CodePen</a> where I display a lot of my fun project experiments.</p><br>
-   <p><a href="https://www.codepen.io/GRM50000" target="_blank" class="buttonFake" role="button">
-     See my CodePens Here</a></p>
-  </article>
+    <article class="container"><a href="../assets/Reid_663_Portfolio.pdf" target="_blank">
+        <img class="article_img" src="../images/adobe_3Logos_SVG.svg" id="gretschWeb" alt="Coding HTML" width="100" height="100" style="float: left"></a>
+      <h2>Visual CV</h2>
+      <p class="bigCaps">One of my earlier Portfolios in PDF form that displays many of my still-image creating skills...</p><br>
+      <p><a href="../assets/Reid_663_Portfolio.pdf" target="_blank" class="buttonFake" role="button">
+          Open PDF in New Window</a></p>
+    </article>
 
-  <article class="container">
-   <a href="../pages/gump/index.html" target="_blank">
-    <img class="article_img" width="100" height="100" src="gump/images/moviePoster.png" alt="Forrest Gump Movie Poster" style="float: left"></a>
-   <h2>Spoiler Alert</h2>
-   <p class="bigCaps">Forrest Gump is my favorite movie, and so I made a class project with a <em>Spoiler Alert</em> which you can reveal with the click of a button...</p><br>
-   <p>
-    <a href="../pages/gump/index.html" target="_blank" class="buttonFake">Movie Summary (New Window)</a>
-   </p>
-  </article>
+    <article class="container">
+      <a href="../pages/gump/index.html" target="_blank">
+        <img class="article_img" width="100" height="100" src="gump/images/moviePoster.png" alt="Forrest Gump Movie Poster" style="float: left"></a>
+      <h2>Spoiler Alert</h2>
+      <p class="bigCaps">Forrest Gump is my favorite movie, and so I made a class project with a <em>Spoiler Alert</em> which you can reveal with the click of a button...</p><br>
+      <p>
+        <a href="../pages/gump/index.html" target="_blank" class="buttonFake">Movie Summary (New Window)</a>
+      </p>
+    </article>
 
-  <article class="container">
-   <a href="../pages/digital-design.html">
-    <img class="article_img" width="100" height="100" src="../images/adobe_logo.png" alt="Adobe Suite Certified" style="float: right"></a>
-   <h2>Adobe Suite</h2>
-   <p class="bigCaps">From 2021-23 I was Certified in Digital Design by San Diego City College CE, encompassing the full Adobe Creative Suite.</p><br>
-   <p>
-    <a href="digital-design.html" class="buttonFake" role="button">See my Digital Works</a>
-   </p>
-  </article>
+    <article class="container">
+      <a href="parallax/index.html" target="_blank" role="button">
+        <img class="article_img" width="100" height="100" src="../images/1.png" alt="Adobe Suite Certified" style="float: right"></a>
+      <h2>Parallax</h2>
+      <p class="bigCaps">A Parallax Image Carousel built using HTML, JavaScript, and HTML, showcasing many images created in these past few years of my Digital Design education.</p><br>
+      <p>
+        <a href="parallax/index.html" target="_blank" class="buttonFake" role="button">See my Digital Works</a>
+      </p>
+    </article>
 
-  <article class="container" id="rockBluesJazz">
-   <a href="rbj.html">
-    <img class="article_img" width="100" height="100" src="../images/coding.png" alt="Coding for Roshambo" style="float: right"></a>
-   <h2>Roshambo</h2>
-   <p class="bigCaps">If you like <em>Rock-Paper-Scissors</em>, you'll love </p><br>
-   <p>
-    <a href="rbj.html" class="buttonFake" role="button">Photos and Videos</a>
-   </p>
-  </article>
+    <article class="container" id="rockBluesJazz">
+      <a href="rock-blues-jazz.html">
+        <img class="article_img" width="100" height="100" src="../images/coding.png" alt="Coding for Roshambo" style="float: right"></a>
+      <h2>Roshambo</h2>
+      <p class="bigCaps">If you like <em>Rock-Paper-Scissors</em>, you'll love <a href="rock-blues-jazz.html">Rock-Blues-Jazz</a></p>
+      <p>
+        <a href="rock-blues-jazz.html" class="buttonFake">Rock Blues Jazz</a>
+      </p>
+    </article>
 
-  <!--
+    <article class="container"><a href="https://www.codepen.io/GRM50000" target="_blank">
+        <img class="article_img" src="../images/codePen.png" id="codePen" alt="Coding HTML" width="100" height="100" style="float: right"></a>
+      <h2>CodePen</h2>
+      <p class="bigCaps">I'm GRM50000 on <a href="https://codepen.io/GRM50000/" target="_blank">CodePen</a> where I display a lot of my fun project experiments.</p><br>
+      <p><a href="https://www.codepen.io/GRM50000" target="_blank" class="buttonFake" role="button">
+          See my CodePens Here</a></p>
+    </article>
+
+
+    <!--
 
 wait
 <article class="container">
@@ -156,25 +165,25 @@ wait
 
 </article>
 -->
-  <!--wait-->
- </main>
- <div class="space"></div>
- <footer>
-  <a href="https://github.com/GRM50000" target="_blank">
-   <i class="fa-brands fa-github-square footerx">GitHub</i></a>
+    <!--wait-->
+  </main>
+  <div id="space"></div>
+  <footer>
+    <a href="https://github.com/GRM50000" target="_blank">
+      <i class="fa-brands fa-github-square footerx">GitHub</i></a>
 
-  <a href="https://www.instagram.com/garyreidmusic" target="_blank">
-   <i class="fa-brands fa-instagram footerx">Instagram</i></a>
+    <a href="https://www.instagram.com/garyreidmusic" target="_blank">
+      <i class="fa-brands fa-instagram footerx">Instagram</i></a>
 
-  <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
-  <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
+    <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
+    <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
 
-  <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
-   <i class="fa-brands fa-spotify footerx">Spotify</i></a>
+    <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
+      <i class="fa-brands fa-spotify footerx">Spotify</i></a>
 
-  <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
- </footer>
- <script src="../scripts/jsDark.js"></script>
+    <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
+  </footer>
+  <script src="../scripts/jsDark.js"></script>
 </body>
 
 </html>

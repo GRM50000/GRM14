@@ -2,160 +2,161 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="description" content="Contact | Gary Reid Music GRM50000">
- <meta property="og:description" content="Contact | Gary Reid Music GRM50000">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Contact Us | GaryReidMusic | GRM50000</title>
- <!--    favicon-->
- <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Contact | Gary Reid Music GRM50000">
+  <meta property="og:description" content="Contact | Gary Reid Music GRM50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | GaryReidMusic | GRM50000</title>
+  <!--    favicon-->
+  <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
 
- <!-- font awesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
- <link rel="stylesheet" href="../css/style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
- <header id="header">
-  <!-- name script -->
-  <script>
-   function myFunction() {
-    let person = prompt("Please enter your name", "Harry Potter?");
-    if (person != null) {
-     document.getElementById("demo").innerHTML =
-      "I am Grateful for you, " + person + "!";
-    }
-   }
-  </script>
- <!-- name script end -->
- 
-  <div id="fixBlock">
-   <a href="../index.html">
-    <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
-   <a href="../index.html">
-    <h1>Gary Reid Music</h1>
-   </a>
+  <header id="header">
+    <!-- name script -->
+    <script>
+      function myFunction() {
+        let person = prompt("Please enter your name", "Harry Potter?");
+        if (person != null) {
+          document.getElementById("demo").innerHTML =
+            "I am Grateful for you, " + person + "!";
+        }
+      }
 
-   <p id="headerText">I've played <a href="../pages/guitar.html" style="color:white" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="../pages/digital-design.html" style="color:#a20">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
+    </script>
+    <!-- name script end -->
 
-   <!-- NameButton <button id="name" onclick="myFunction()">What's Your Name?</button> NameButton -->
+    <div id="fixBlock">
+      <a href="../index.html">
+        <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+      <a href="../index.html">
+        <h1>Gary Reid Music</h1>
+      </a>
 
-   <div>
-    <h2 id="demo">Music and Media
-     <!-- TheSwitch -->
-     <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
-     <!-- TheSwitch -->
-    </h2>
-   </div>
-  </div>
- </header>
+      <p id="headerText">I've played <a href="guitar.html" style="color:white; text-shadow: 2px 2px 2px black">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="digital-design.html" style="color:#a20; text-shadow: 2px 2px 2px yellow">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... though my style is still from the '80s.</p>
 
- <!-- exemplary topnav 512 
+      <!-- NameButton <button id="name" onclick="myFunction()">What's Your Name?</button> NameButton -->
+
+      <div>
+        <h2 id="demo">Music and Media
+          <!-- TheSwitch -->
+          <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
+          <!-- TheSwitch -->
+        </h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- exemplary topnav 512 
         between header and main -->
 
- <div class="topnav">
-  <a href="../index.html" class="active">Home - Menu</a>
-  <div id="myLinks">
-   <a href="all-music.html">Music</a>
-   <a href="digital-design.html">Adobe</a>
-   <a href="all-web.html">Web Coding </a>
-   <a href="contact.html">Contact</a>
+  <div class="topnav">
+    <a href="../index.html" class="active">Home - Menu</a>
+    <div id="myLinks">
+      <a href="all-music.html">Music</a>
+      <a href="digital-design.html">Adobe</a>
+      <a href="all-web.html">Web Coding </a>
+      <a href="contact.html">Contact</a>
 
+    </div>
+    <!-- nav script -->
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+    </script>
+    <!-- nav bars -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-  <!-- nav script -->
-  <script>
-   function myFunction1() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-     x.style.display = "none";
-    } else {
-     x.style.display = "block";
-    }
-   }
 
-  </script>
-  <!-- nav bars -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
-   <i class="fa fa-bars"></i>
-  </a>
- </div>
-
- <!-- ^exemplary topnav 512 
+  <!-- ^exemplary topnav 512 
         between header and main -->
- <main id="oneTwoMed">
-  <article class="container">
-   <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
+  <main id="oneTwoMed">
+    <article class="container">
+      <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
 
-   <h2 class="article_h2">Contact Us</h2>
-   <p>Trying to Build a Contact form here, but I don't know how to send it...</p>
-  </article>
+      <h2 class="article_h2">Contact</h2>
+      <p>Here I've built a Contact Form, but I don't know how to send it... yet!</p>
+    </article>
 
-  <article class="container" id="randoFeature">
-   <img class="article_img" id="article_2_img" src="../images/gradientColorWheel.png" alt="ColorWheel by 8 leaf-clover, https://commons.wikimedia.org/w/index.php?curid=113344793" width="100" height="100" style="float: right">
+    <article class="container" id="randoFeature">
+      <img class="article_img" id="article_2_img" src="../images/gradientColorWheel.png" alt="ColorWheel by 8 leaf-clover, https://commons.wikimedia.org/w/index.php?curid=113344793" width="100" height="100" style="float: right">
 
-   <section id="contactUs">
-    <h2 class="article_h2">Contact Us</h2>
-    <p>Maybe This Will Work</p>
+      <section id="contactUs">
+        <h2 class="article_h2">Contact Us</h2>
+        <p>Maybe This Will Work</p>
 
-    <form action="mailto:imaginejesus@hotmail.com?subject=Send_This_Form" method="post" id="saveForm">
-     <fieldset>
-      <legend>Let's Stay In Touch!</legend>
+        <form action="mailto:imaginejesus@hotmail.com?subject=Send_This_Form" method="post" id="saveForm">
+          <fieldset>
+            <legend>Let's Stay In Touch!</legend>
 
-      <label for="first_name">First Name</label>
-      <input type="text" id="first_name" name="first_name" value="" placeholder="Your First Name" required autofocus>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" value="" placeholder="Your First Name" required autofocus>
 
-      <label for="first_name">Last Name</label>
-      <input type="text" id="last_name" name="last_name" value="" placeholder="Your Last Name" required>
-      <br>
-      <label for="first_name">Email</label>
-      <input type="email" id="email" name="email" value="" placeholder="your@email.com" required>
-      <br>
-      <input type="reset" class="buttonFake1" id="reset" value="Reset">
-      <br> <br>
-      <label for="interests">Interests:</label>
-      <select id="interests" name="interests">
-       <option value="Select A Location">Choose Your Interest</option>
-       <option value="Music">Music</option>
-       <option value="Adobe">Adobe Design</option>
-       <option value="HTML">HTML, CSS, JS</option>
-      </select>
-      <br>
-      <label for="message">Questions/Comments:</label>
-      <textarea name="message" id="message" placeholder="Your Message Here" rows="2"></textarea>
-      <br>
-      <br>
-      <p>Sign up for our Newsletter:</p>
+            <label for="first_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" value="" placeholder="Your Last Name" required>
+            <br>
+            <label for="first_name">Email</label>
+            <input type="email" id="email" name="email" value="" placeholder="your@email.com" required>
+            <br>
+            <input type="reset" class="buttonFake1" id="reset" value="Reset">
+            <br> <br>
+            <label for="interests">Interests:</label>
+            <select id="interests" name="interests">
+              <option value="Select A Location">Choose Your Interest</option>
+              <option value="Music">Music</option>
+              <option value="Adobe">Adobe Design</option>
+              <option value="HTML">HTML, CSS, JS</option>
+            </select>
+            <br>
+            <label for="message">Questions/Comments:</label>
+            <textarea name="message" id="message" placeholder="Your Message Here" rows="2"></textarea>
+            <br>
+            <br>
+            <p>Sign up for our Newsletter:</p>
 
-      <ul class="radioList">
-       <li><input type="radio" class="newsletter" name="newsletter" value="yes">Yes </li>
-       <li><input type="radio" class="newsletter" name="newsletter" value="no">No </li>
-      </ul>
+            <ul class="radioList">
+              <li><input type="radio" class="newsletter" name="newsletter" value="yes">Yes </li>
+              <li><input type="radio" class="newsletter" name="newsletter" value="no">No </li>
+            </ul>
 
-      <input type="submit" id="submit" class="buttonFake1" value="Yes, Let's Keep In Touch">
-     </fieldset>
-    </form>
-    <!--end form -->
-   </section>
-  </article>
- </main>
- <div id="space"></div>
- <footer>
-  <a href="https://github.com/GRM50000" target="_blank">
-   <i class="fa-brands fa-github-square footerx">GitHub</i></a>
-  <a href="https://www.instagram.com/garyreidmusic" target="_blank">
-   <i class="fa-brands fa-instagram footerx">Instagram</i></a>
+            <input type="submit" id="submit" class="buttonFake1" value="Yes, Let's Keep In Touch">
+          </fieldset>
+        </form>
+        <!--end form -->
+      </section>
+    </article>
+  </main>
+  <div id="space"></div>
+  <footer>
+    <a href="https://github.com/GRM50000" target="_blank">
+      <i class="fa-brands fa-github-square footerx">GitHub</i></a>
+    <a href="https://www.instagram.com/garyreidmusic" target="_blank">
+      <i class="fa-brands fa-instagram footerx">Instagram</i></a>
 
-  <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
-  <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
+    <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
+    <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
 
-  <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
-   <i class="fa-brands fa-spotify footerx">Spotify</i></a>
+    <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
+      <i class="fa-brands fa-spotify footerx">Spotify</i></a>
 
-  <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
- </footer>
- <script src="../scripts/jsDark.js"></script>
+    <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
+  </footer>
+  <script src="../scripts/jsDark.js"></script>
 </body>
 
 </html>

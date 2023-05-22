@@ -2,144 +2,137 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="description" content="Adobe Suite Portfolio | Gary Reid | GRM50000">
- <meta property="og:description" content="Adobe Suite Portfolio | Gary Reid | GRM50000">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Adobe Digital Design Portfolio | GRM50000 |Gary Reid</title>
- <!--    favicon-->
- <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Adobe Suite Portfolio | Gary Reid | GRM50000">
+  <meta property="og:description" content="Adobe Suite Portfolio | Gary Reid | GRM50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe Digital Design Portfolio | GRM50000 | Gary Reid</title>
+  <!--    favicon-->
+  <link rel="icon" type="image/x-icon" href="../images/favicon-grm.ico">
 
- <!-- font awesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
- <link rel="stylesheet" href="../css/style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
 
- <header id="header">
-  <!-- name script -->
-  <script>
-   function myFunction() {
-    let person = prompt("Please enter your name", "Harry Potter?");
-    if (person != null) {
-     document.getElementById("demo").innerHTML =
-      "I am Grateful for you, " + person + "!";
-    }
-   }
+  <header id="header">
+    <!-- name script -->
+    <script>
+      function myFunction() {
+        let person = prompt("Please enter your name", "Harry Potter?");
+        if (person != null) {
+          document.getElementById("demo").innerHTML =
+            "I am Grateful for you, " + person + "!";
+        }
+      }
 
-  </script>
+    </script>
 
 
-  <div id="fixBlock">
-   <a href="../index.html">
-    <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
-   <a href="../index.html">
-    <h1>Gary Reid Music</h1>
-   </a>
+    <div id="fixBlock">
+      <a href="../index.html">
+        <img id="logo" src="../images/Reid_Logo_SVG.svg" alt="Gary Reid Music Logo"></a>
+      <a href="../index.html">
+        <h1>Gary Reid Music</h1>
+      </a>
 
-   <p id="headerText">I've played <a href="../pages/guitar.html" style="color:white" target="_blank">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="../pages/digital-design.html" style="color:#a20">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... </p>
+      <p id="headerText">I've played <a href="guitar.html" style="color:white; text-shadow: 2px 2px 2px black">Guitar</a> for about 36 years, and about 6 months before that I was doing <a href="digital-design.html" style="color:#a20; text-shadow: 2px 2px 2px yellow">Graphic Design</a> on a Macintosh 512k. I have learned a lot since then... though my style is still from the '80s.</p>
 
-   <!-- NameButton <button id="name" onclick="myFunction()">What's Your Name?</button> NameButton -->
+      <!-- NameButton <button id="name" onclick="myFunction()">What's Your Name?</button> NameButton -->
 
-   <div>
-    <h2 id="demo">Music and Media
-     <!-- TheSwitch -->
-     <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
-     <!-- TheSwitch -->
-    </h2>
-   </div>
-  </div>
- </header>
- <!-- exemplary topnav 512 
+      <div>
+        <h2 id="demo">Music and Media
+          <!-- TheSwitch -->
+          <img src="../images/redDark.png" alt="Dark or Light Mode Switch" id="icon" class="darkButton">
+          <!-- TheSwitch -->
+        </h2>
+      </div>
+    </div>
+  </header>
+  <!-- exemplary topnav 512 
         between header and main -->
 
- <div class="topnav">
-  <a href="../index.html" class="active">Home - Menu</a>
-  <div id="myLinks">
-   <a href="all-music.html">Music</a>
-   <a href="digital-design.html">Adobe</a>
-   <a href="all-web.html">Web Coding </a>
-   <a href="contact.html">Contact</a>
+  <div class="topnav">
+    <a href="../index.html" class="active">Home - Menu</a>
+    <div id="myLinks">
+      <a href="all-music.html">Music</a>
+      <a href="digital-design.html">Adobe</a>
+      <a href="all-web.html">Web Coding </a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- nav script -->
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+    </script>
+    <!-- nav bars -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-  <!-- nav script -->
-  <script>
-   function myFunction1() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-     x.style.display = "none";
-    } else {
-     x.style.display = "block";
-    }
-   }
 
-  </script>
-  <!-- nav bars -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
-   <i class="fa fa-bars"></i>
-  </a>
- </div>
-
- <!-- ^exemplary topnav 512 
+  <!-- ^exemplary topnav 512 
         between header and main -->
- <main id="oneTwoMed">
-  <article class="container">
-   <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
+  <main id="oneTwoMed">
+    <article class="container">
+      <img class="article_img" id="article_1_img" src="../images/keyboard.jpg" alt="Gary Reid Backing Tracks" width="100" height="100" style="float: right">
 
-   <h2 class="article_h2">GR/fx</h2>
-   <p>Choose a Project and it will display in the adjacent frame:</p>
-   <div class="projects">
-    <button class="buttonFake1" id="animated1" style="width:90%">Musical Staff Teaser</button><br>
-    <button class="buttonFake1" id="animated2" style="width:90%">Daily Music Thing</button><br>
-    <button class="buttonFake1" id="animated3" style="width:90%">Found A Guitar</button><br>
-    <button class="buttonFake1" id="animated4" style="width:90%">Pismo Surf Edit</button><br>
-    <button class="buttonFake1" id="card1" style="width:90%">Custom Playing Card</button><br>
+      <h2 class="article_h2">GR/fx</h2>
+      <p>Choose a Project and it will display in the adjacent frame:</p>
+      <div class="projects">
+        <button class="buttonFake1" id="animated1" style="width:90%">Musical Staff Teaser</button><br>
+        <button class="buttonFake1" id="animated2" style="width:90%">Daily Music Thing</button><br>
+        <button class="buttonFake1" id="animated3" style="width:90%">Found A Guitar</button><br>
+        <button class="buttonFake1" id="animated4" style="width:90%">Pismo Surf Edit</button><br>
+        <button class="buttonFake1" id="card1" style="width:90%">Custom Playing Card</button><br>
 
+      </div>
+    </article>
 
-   </div>
-  </article>
+    <article class="container" id="randoFeature">
+      <img class="article_img" id="article_2_img" src="../images/adobe_3Logos_SVG.svg" alt="Adobe Illustrator, Photoshop, InDesign" width="100" height="100" style="float: right">
 
-  <article class="container" id="randoFeature">
-   <img class="article_img" id="article_2_img" src="../images/adobe_3Logos_SVG.svg" alt="Adobe Illustrator, Photoshop, InDesign" width="100" height="100" style="float: right">
+      <section id="colorPicker">
+        <h2 class="article_h2">For Your Consideration</h2>
+        <!--            insert Baseball Card PDF-->
+        <p>Several Adobe Projects I've created over the past 3 years...</p>
+        <div class="adobeDisplayClass">
+          <iframe id="ytVideo" src="https://www.youtube.com/embed/JXTO40yieh4" loading="lazy" title="110 BPM" allow="accelerometer; autoplay; gyroscope" allowfullscreen></iframe>
+        </div>
+      </section>
 
-   <section id="colorPicker">
-    <h2 class="article_h2">For Your Viewing Pleasure</h2>
-    <!--            insert Baseball Card PDF-->
-    <p>Several Adobe Projects I've created over the past 3 years</p>
-    <div class="adobeDisplayClass">
-     <iframe id="ytVideo" src="https://www.youtube.com/embed/JXTO40yieh4" loading="lazy" title="110 BPM" allow="accelerometer; autoplay; gyroscope" allowfullscreen></iframe>
-    </div>
+    </article>
 
-    <!--
-    <div class="buttonFake">
-     <a href="../assets/Reid_661_PlayingCard.pdf" target="_blank">View in a new Browser)</a>
-    </div>
--->
-   </section>
+  </main>
+  <div id="space"></div>
+  <footer>
+    <a href="https://github.com/GRM50000" target="_blank">
+      <i class="fa-brands fa-github-square footerx">GitHub</i></a>
 
-  </article>
+    <a href="https://www.instagram.com/garyreidmusic" target="_blank">
+      <i class="fa-brands fa-instagram footerx">Instagram</i></a>
 
- </main>
- <div id="space"></div>
- <footer>
-  <a href="https://github.com/GRM50000" target="_blank">
-   <i class="fa-brands fa-github-square footerx">GitHub</i></a>
+    <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
+    <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
 
-  <a href="https://www.instagram.com/garyreidmusic" target="_blank">
-   <i class="fa-brands fa-instagram footerx">Instagram</i></a>
+    <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
+      <i class="fa-brands fa-spotify footerx">Spotify</i></a>
 
-  <a href="https://www.youtube.com/channel/UCxh7QpzVaEihUAZwP2inqnQ" target="_blank"><i class="fa-brands fa-youtube footerx">YouTube</i></a>
-  <a href="https://garyreidmusic.bandcamp.com/album/get-this-gary-reid-music" target="_blank"><i class="fa-brands fa-bandcamp footerx">Bandcamp</i></a>
-
-  <a href="https://open.spotify.com/playlist/37i9dQZF1E4ECfJBqDbq7k" target="_blank">
-   <i class="fa-brands fa-spotify footerx">Spotify</i></a>
-
-  <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
- </footer>
- <script src="../scripts/jsDark.js"></script>
- <script src="../scripts/jsAdobe.js"></script>
+    <a href="mailto:imaginejesus@hotmail.com" class="footerx" target="_blank">&copy;GRM50000</a>
+  </footer>
+  <script src="../scripts/jsDark.js"></script>
+  <script src="../scripts/jsAdobe.js"></script>
 
 </body>
 
