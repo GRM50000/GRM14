@@ -35,7 +35,7 @@ img {
 }
 
 #logo {
-  --sameNum: 7em;
+  --sameNum: 6.5em;
   height: var(--sameNum);
   width: var(--sameNum);
   background-image: radial-gradient(var(--secondary-color), orange, #a20);
