@@ -282,13 +282,13 @@ main {
 
 
 #switch {
-  position: fixed;
-  top: 6em;
+  position: sticky;
+  bottom: 3em;
 }
 
 .slider {
   position: absolute;
-  top: 50px;
+  top: 100px;
   left: 0;
   width: 2800px;
   height: 100%;
