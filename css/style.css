@@ -7,7 +7,7 @@
   --primary-margin: 3px;
   /*colors*/
   --bg-color: orange;
-  --secondary-color: #A20;
+  --secondary-color: #A31;
   --bright-color: #FDFD96;
   --link-color: #7B3F00;
   --saturate: 1;
@@ -18,8 +18,8 @@
 
 /* dark mode stuff */
 .dark-theme {
-  --bg-color: #ddd;
-  --bright-color: #eeee;
+  --bg-color: #aaa;
+  --bright-color: #ccc;
   --link-color: #991;
   --saturate: .5;
   --secondary-color: #444;
@@ -46,7 +46,7 @@ img {
   border: 2px solid var(--bright-color);
   border-radius: var(--border-radius);
   cursor: pointer;
-  width: 5em;
+  width: 4em;
   height: .9em;
   margin-left: 2em;
 }
@@ -69,7 +69,7 @@ img {
 .topnav a {
   display: block;
   color: var(--secondary-color);
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 3px;
   text-decoration: none;
 }
@@ -90,7 +90,7 @@ img {
 
 .active {
   position: relative;
-  left: 20px;
+  left: 25px;
   background-color: var(--bright-color);
   color: var(--secondary-color);
 }
